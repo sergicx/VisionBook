@@ -96,7 +96,7 @@ public class CapturarFragment extends Fragment {
             //Obligo al usuari a fer clic a la pantalla per a començar amb el reconeixement de text
             //ja que a vegades la camara no está enfoocada
             mCameraView.setOnClickListener((View v) -> {
-                Toast.makeText(getContext(), "Buscant llibre...", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "Buscant llibre, no moguis el dispositiu...", Toast.LENGTH_LONG).show();
 
                 //Inicio el detector de textos
                 textRecognizer.setProcessor(new Detector.Processor<TextBlock>() {
@@ -192,19 +192,16 @@ public class CapturarFragment extends Fragment {
                         JSONObject primerLlibre = llibres.getJSONObject(0);
                         JSONObject volumeInfo = primerLlibre.getJSONObject("volumeInfo");
                         String titol = volumeInfo.getString("title");
-                        String descripcio = volumeInfo.getString("description");
-                        ArrayList<String> llistaAutors = new ArrayList<String>();
+                        String descripcio = "Sense descripció";
+                        if (volumeInfo.has("description"))
+                            descripcio = volumeInfo.getString("description");
+
+                        ArrayList<String> llistaAutors = new ArrayList<>();
                         JSONArray autorsJSON = volumeInfo.getJSONArray("authors");
-                        StringBuilder autorsBuilder = new StringBuilder();
-                        for (int i=0; i<autorsJSON.length(); i++){
-                            autorsBuilder.append(autorsJSON.get(i));
-                            if (i == autorsBuilder.length()){
-                                autorsBuilder.append(",");
-                            }
-                        }
+
 
                         for (int i=0; i< autorsJSON.length(); i++){
-                            llistaAutors.add(autorsJSON.getJSONObject(i).toString());
+                            llistaAutors.add(autorsJSON.getString(i));
                         }
 
 
@@ -213,7 +210,7 @@ public class CapturarFragment extends Fragment {
                         llibre.setTitol(titol);
                         llibre.setDescripcio(descripcio);
 
-                        //llibre.setAutors();
+                        llibre.setAutors(llistaAutors);
                         return llibre;
                     }
                 } catch (JSONException e) {

@@ -8,9 +8,19 @@
     tools:context="com.visionbook.sergi.visionbook.LlibreDetall"
     tools:showIn="@layout/activity_llibre_detall">
 
-    <TextView
-        android:id="@+id/tvResum"
-        android:layout_width="match_parent"
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Resum del llibre..." />
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:id="@+id/tvResum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Resum del llibre..." />
+
+    </android.support.v7.widget.CardView>
 </android.support.v4.widget.NestedScrollView>
