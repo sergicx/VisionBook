@@ -6,6 +6,10 @@
         <item>Capturar libro</item>
         <item>Sobre la app</item>
     </string-array>
+    
+    <string name="buscant_llibre">Buscant llibre, no moguis el dispositiu...</string>
+    <string name="llibre_no_trobat">Llibre no trobat</string>
+    <string name="sense_descripcio">Llibre sense descripció</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
