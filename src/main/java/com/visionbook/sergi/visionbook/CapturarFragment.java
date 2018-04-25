@@ -197,6 +197,7 @@ public class CapturarFragment extends Fragment {
                         String descripcio = "Sense descripció";
                         if (volumeInfo.has("description"))
                             descripcio = volumeInfo.getString("description");
+                        String urlImg = volumeInfo.getJSONObject("imageLinks").getString("thumbnail");
 
                         ArrayList<String> llistaAutors = new ArrayList<>();
                         JSONArray autorsJSON = volumeInfo.getJSONArray("authors");
@@ -211,6 +212,7 @@ public class CapturarFragment extends Fragment {
                         Llibre llibre = new Llibre();
                         llibre.setTitol(titol);
                         llibre.setDescripcio(descripcio);
+                        llibre.setUrlImatge(urlImg);
 
                         llibre.setAutors(llistaAutors);
                         return llibre;
