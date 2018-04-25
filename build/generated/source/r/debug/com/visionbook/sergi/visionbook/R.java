@@ -2148,7 +2148,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -4119,34 +4119,37 @@ public final class R {
     public static final int app_name=0x7f0e0020;
     public static final int appbar_scrolling_view_behavior=0x7f0e0021;
     public static final int bottom_sheet_behavior=0x7f0e0022;
-    public static final int character_counter_pattern=0x7f0e0023;
-    public static final int common_google_play_services_enable_button=0x7f0e0024;
-    public static final int common_google_play_services_enable_text=0x7f0e0025;
-    public static final int common_google_play_services_enable_title=0x7f0e0026;
-    public static final int common_google_play_services_install_button=0x7f0e0027;
-    public static final int common_google_play_services_install_text=0x7f0e0028;
-    public static final int common_google_play_services_install_title=0x7f0e0029;
-    public static final int common_google_play_services_notification_channel_name=0x7f0e002a;
-    public static final int common_google_play_services_notification_ticker=0x7f0e002b;
-    public static final int common_google_play_services_unknown_issue=0x7f0e002c;
-    public static final int common_google_play_services_unsupported_text=0x7f0e002d;
-    public static final int common_google_play_services_update_button=0x7f0e002e;
-    public static final int common_google_play_services_update_text=0x7f0e002f;
-    public static final int common_google_play_services_update_title=0x7f0e0030;
-    public static final int common_google_play_services_updating_text=0x7f0e0031;
-    public static final int common_google_play_services_wear_update_text=0x7f0e0032;
-    public static final int common_open_on_phone=0x7f0e0033;
-    public static final int common_signin_button_text=0x7f0e0034;
-    public static final int common_signin_button_text_long=0x7f0e0035;
-    public static final int hello_blank_fragment=0x7f0e0036;
-    public static final int password_toggle_content_description=0x7f0e0037;
-    public static final int path_password_eye=0x7f0e0038;
-    public static final int path_password_eye_mask_strike_through=0x7f0e0039;
-    public static final int path_password_eye_mask_visible=0x7f0e003a;
-    public static final int path_password_strike_through=0x7f0e003b;
-    public static final int search_menu_title=0x7f0e003c;
-    public static final int status_bar_notification_info_overflow=0x7f0e003d;
-    public static final int title_activity_llibre_detall=0x7f0e003e;
+    public static final int buscant_llibre=0x7f0e0023;
+    public static final int character_counter_pattern=0x7f0e0024;
+    public static final int common_google_play_services_enable_button=0x7f0e0025;
+    public static final int common_google_play_services_enable_text=0x7f0e0026;
+    public static final int common_google_play_services_enable_title=0x7f0e0027;
+    public static final int common_google_play_services_install_button=0x7f0e0028;
+    public static final int common_google_play_services_install_text=0x7f0e0029;
+    public static final int common_google_play_services_install_title=0x7f0e002a;
+    public static final int common_google_play_services_notification_channel_name=0x7f0e002b;
+    public static final int common_google_play_services_notification_ticker=0x7f0e002c;
+    public static final int common_google_play_services_unknown_issue=0x7f0e002d;
+    public static final int common_google_play_services_unsupported_text=0x7f0e002e;
+    public static final int common_google_play_services_update_button=0x7f0e002f;
+    public static final int common_google_play_services_update_text=0x7f0e0030;
+    public static final int common_google_play_services_update_title=0x7f0e0031;
+    public static final int common_google_play_services_updating_text=0x7f0e0032;
+    public static final int common_google_play_services_wear_update_text=0x7f0e0033;
+    public static final int common_open_on_phone=0x7f0e0034;
+    public static final int common_signin_button_text=0x7f0e0035;
+    public static final int common_signin_button_text_long=0x7f0e0036;
+    public static final int hello_blank_fragment=0x7f0e0037;
+    public static final int llibre_no_trobat=0x7f0e0038;
+    public static final int password_toggle_content_description=0x7f0e0039;
+    public static final int path_password_eye=0x7f0e003a;
+    public static final int path_password_eye_mask_strike_through=0x7f0e003b;
+    public static final int path_password_eye_mask_visible=0x7f0e003c;
+    public static final int path_password_strike_through=0x7f0e003d;
+    public static final int search_menu_title=0x7f0e003e;
+    public static final int sense_descripcio=0x7f0e003f;
+    public static final int status_bar_notification_info_overflow=0x7f0e0040;
+    public static final int title_activity_llibre_detall=0x7f0e0041;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0f0000;
@@ -9445,7 +9448,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
