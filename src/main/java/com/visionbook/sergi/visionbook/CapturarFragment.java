@@ -135,11 +135,13 @@ public class CapturarFragment extends Fragment {
                                         llibre = new obtenirDadesLlibre().execute(capturaFinal.substring(0, capturaFinal.length()/2)).get();
                                         if (llibre == null){
                                             //Si la casuistica anterior tampoc troba el llibre, retallo el llibre desde la meitat fins al final
-                                            new obtenirDadesLlibre().execute(capturaFinal.substring(capturaFinal.length()/2, capturaFinal.length()));
-                                            //Si no troba el llibre mostro un Toast informant de que no l'ha trobat
-                                            Toast.makeText(getContext(), "Llibre no trobat", Toast.LENGTH_LONG).show();
-                                            //Torno a executar el fragment
-                                            getFragmentManager().beginTransaction().detach(CapturarFragment.this).attach(CapturarFragment.this).commit();
+                                            llibre = new obtenirDadesLlibre().execute(capturaFinal.substring(capturaFinal.length()/2, capturaFinal.length()));
+                                            if (llibre == null){
+                                                //Si no troba el llibre mostro un Toast informant de que no l'ha trobat
+                                                Toast.makeText(getContext(), "Llibre no trobat", Toast.LENGTH_LONG).show();
+                                                //Torno a executar el fragment
+                                                getFragmentManager().beginTransaction().detach(CapturarFragment.this).attach(CapturarFragment.this).commit();
+                                            }
                                         }
                                     }
                                 } catch (InterruptedException e) {
