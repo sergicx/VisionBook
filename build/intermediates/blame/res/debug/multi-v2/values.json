@@ -114,9 +114,11 @@
                 {
                     "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
-                        "startLines": "-1,-1,-1",
-                        "startColumns": "-1,-1,-1",
-                        "startOffsets": "-1,-1,-1"
+                        "startLines": "1,-1,-1",
+                        "startColumns": "4,-1,-1",
+                        "startOffsets": "17,-1,-1",
+                        "endColumns": "46,-1,-1",
+                        "endOffsets": "59,-1,-1"
                     },
                     "to": {
                         "startLines": "689,738,767",
@@ -207,11 +209,9 @@
                 {
                     "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,9,-1,10,11,-1",
-                        "startColumns": "-1,-1,-1,4,-1,4,4,-1",
-                        "startOffsets": "-1,-1,-1,234,-1,321,384,-1",
-                        "endColumns": "-1,-1,-1,85,-1,61,68,-1",
-                        "endOffsets": "-1,-1,-1,315,-1,378,448,-1"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "2,848,849,852,872,873,880,882",

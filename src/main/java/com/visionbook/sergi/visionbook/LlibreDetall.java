@@ -65,15 +65,14 @@ public class LlibreDetall extends AppCompatActivity {
     }
 
     private class DescarregarPortada extends AsyncTask<String, Void, Bitmap> {
-        private String TAG = "DownloadImage";
-        private Bitmap downloadImageBitmap(String sUrl) {
+        ProgressDialog dialog;
+        private Bitmap descarregarBitmap(String sUrl) {
             Bitmap bitmap = null;
             try {
                 InputStream inputStream = new URL(sUrl).openStream();
                 bitmap = BitmapFactory.decodeStream(inputStream);
                 inputStream.close();
             } catch (Exception e) {
-                Log.d(TAG, "Exception 1, Something went wrong!");
                 e.printStackTrace();
             }
             return bitmap;
@@ -81,13 +80,18 @@ public class LlibreDetall extends AppCompatActivity {
 
         @Override
         protected void onPreExecute(){
-            ProgressDialog dialog = ProgressDialog.show(LlibreDetall.this, "Loading...", "Please wait...", true);
+            dialog = ProgressDialog.show(LlibreDetall.this, "Carregant", "Carregant el llibre...", true);
             dialog.show();
         }
 
         @Override
         protected Bitmap doInBackground(String... params) {
-            return downloadImageBitmap(params[0]);
+            return descarregarBitmap(params[0]);
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap portada){
+            dialog.dismiss();
         }
 
     }

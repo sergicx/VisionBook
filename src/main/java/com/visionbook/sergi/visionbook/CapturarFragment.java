@@ -3,6 +3,7 @@ package com.visionbook.sergi.visionbook;
 
 import android.Manifest;
 import android.app.Fragment;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
@@ -168,11 +169,14 @@ public class CapturarFragment extends Fragment {
     }
 
     private class obtenirDadesLlibre extends AsyncTask<String, Void, Llibre>{
+        ProgressDialog dialog;
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
             System.out.println("Començant la cerca...");
+            dialog = ProgressDialog.show(getActivity(), "Buscant", "Buscant el llibre...", true);
+            dialog.show();
         }
 
         @Override
@@ -234,10 +238,9 @@ public class CapturarFragment extends Fragment {
                 Intent iResultat = new Intent(getActivity(), LlibreDetall.class);
                 iResultat.putExtra("resultat", result);
                 startActivity(iResultat);
-            }else {
-                //Contingut else borrat temporalment
-
             }
+
+            dialog.dismiss();
         }
 
     }
