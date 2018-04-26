@@ -3985,16 +3985,17 @@ public final class R {
     public static final int transition_scene_layoutid_cache=0x7f0900c1;
     public static final int transition_transform=0x7f0900c2;
     public static final int tvAutor=0x7f0900c3;
-    public static final int tvResum=0x7f0900c4;
-    public static final int uniform=0x7f0900c5;
-    public static final int up=0x7f0900c6;
-    public static final int useLogo=0x7f0900c7;
-    public static final int view_offset_helper=0x7f0900c8;
-    public static final int visible=0x7f0900c9;
-    public static final int wide=0x7f0900ca;
-    public static final int withText=0x7f0900cb;
-    public static final int wrap=0x7f0900cc;
-    public static final int wrap_content=0x7f0900cd;
+    public static final int tvEditorial=0x7f0900c4;
+    public static final int tvResum=0x7f0900c5;
+    public static final int uniform=0x7f0900c6;
+    public static final int up=0x7f0900c7;
+    public static final int useLogo=0x7f0900c8;
+    public static final int view_offset_helper=0x7f0900c9;
+    public static final int visible=0x7f0900ca;
+    public static final int wide=0x7f0900cb;
+    public static final int withText=0x7f0900cc;
+    public static final int wrap=0x7f0900cd;
+    public static final int wrap_content=0x7f0900ce;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0a0000;

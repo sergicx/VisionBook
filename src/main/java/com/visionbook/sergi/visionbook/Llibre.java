@@ -13,25 +13,21 @@ public class Llibre implements Parcelable{
     private String editorial;
     private String dataPublicacio;
     private String descripcio;
-    private String isbn;
     private int numPag;
-    private String categoria;
     private String urlImatge;
 
     public Llibre() {
 
     }
 
-    public Llibre(String id, String titol, ArrayList<String> autors, String editorial, String dataPublicacio, String descripcio, String isbn, int numPag, String categoria, String urlImatge) {
+    public Llibre(String id, String titol, ArrayList<String> autors, String editorial, String dataPublicacio, String descripcio, int numPag, String urlImatge) {
         this.id = id;
         this.titol = titol;
         this.autors = autors;
         this.editorial = editorial;
         this.dataPublicacio = dataPublicacio;
         this.descripcio = descripcio;
-        this.isbn = isbn;
         this.numPag = numPag;
-        this.categoria = categoria;
         this.urlImatge = urlImatge;
     }
 
@@ -42,9 +38,7 @@ public class Llibre implements Parcelable{
         editorial = in.readString();
         dataPublicacio = in.readString();
         descripcio = in.readString();
-        isbn = in.readString();
         numPag = in.readInt();
-        categoria = in.readString();
         urlImatge = in.readString();
     }
 
@@ -108,28 +102,12 @@ public class Llibre implements Parcelable{
         this.descripcio = descripcio;
     }
 
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
-
     public int getNumPag() {
         return numPag;
     }
 
     public void setNumPag(int numPag) {
         this.numPag = numPag;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
     }
 
     public String getUrlImatge() {
@@ -153,9 +131,7 @@ public class Llibre implements Parcelable{
         parcel.writeString(editorial);
         parcel.writeString(dataPublicacio);
         parcel.writeString(descripcio);
-        parcel.writeString(isbn);
         parcel.writeInt(numPag);
-        parcel.writeString(categoria);
         parcel.writeString(urlImatge);
     }
 }

@@ -196,11 +196,27 @@ public class CapturarFragment extends Fragment {
                     if (jsonObj.getInt("totalItems") > 0){
                         JSONArray llibres = jsonObj.getJSONArray("items");
                         JSONObject primerLlibre = llibres.getJSONObject(0);
+                        String id = primerLlibre.getString("id");
                         JSONObject volumeInfo = primerLlibre.getJSONObject("volumeInfo");
                         String titol = volumeInfo.getString("title");
                         String descripcio = "Sense descripció";
+                        String editorial = "Editorial no disponible";
+                        String dataPublicacio = "Data no disponible";
+                        int numPag = 0;
+
+                        if (volumeInfo.has("pageCount"))
+                            numPag = volumeInfo.getInt("pageCount");
+
+                        if(volumeInfo.has("publishedDate"))
+                            dataPublicacio = volumeInfo.getString("publishedDate");
+
                         if (volumeInfo.has("description"))
                             descripcio = volumeInfo.getString("description");
+
+                        if (volumeInfo.has("publisher"))
+                            editorial = volumeInfo.getString("publisher");
+
+
                         String urlImg = volumeInfo.getJSONObject("imageLinks").getString("thumbnail");
 
                         ArrayList<String> llistaAutors = new ArrayList<>();
@@ -211,12 +227,7 @@ public class CapturarFragment extends Fragment {
                             llistaAutors.add(autorsJSON.getString(i));
                         }
 
-
-                        System.out.println("Titol: "+ titol);
-                        Llibre llibre = new Llibre();
-                        llibre.setTitol(titol);
-                        llibre.setDescripcio(descripcio);
-                        llibre.setUrlImatge(urlImg);
+                        Llibre llibre = new Llibre(id, titol, llistaAutors, editorial, dataPublicacio, descripcio, numPag, urlImg);
 
                         llibre.setAutors(llistaAutors);
                         return llibre;
