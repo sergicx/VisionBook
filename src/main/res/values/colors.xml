@@ -3,4 +3,7 @@
     <color name="colorPrimary">#2e2e2e</color>
     <color name="colorPrimaryDark">#2e2e2e</color>
     <color name="colorAccent">#000000</color>
+
+    <color name="translucent_scrim_bottom">#6e000000</color>
+    <color name="translucent_scrim_bottom_center">#4c000000</color>
 </resources>

@@ -24,6 +24,7 @@ public class LlibreDetall extends AppCompatActivity {
     private Llibre llibre;
     private TextView tvResum, tvAutor;
     private ImageView ivPortada;
+    private ProgressDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,8 @@ public class LlibreDetall extends AppCompatActivity {
 
         collapsingToolbarLayout.setTitle(llibre.getTitol());
 
+
+
         //Separo els autors per comes si hi ha mes d'un
         ArrayList<String> llistaAutors = llibre.getAutors();
         StringBuilder autorsBuilder = new StringBuilder();
@@ -53,19 +56,15 @@ public class LlibreDetall extends AppCompatActivity {
         }
         tvAutor.setText(autorsBuilder.toString());
         tvResum.setText(llibre.getDescripcio());
-        try {
-            Bitmap portada = new DescarregarPortada().execute(llibre.getUrlImatge()).get();
-            ivPortada.setImageBitmap(portada);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
+        String urlPortada = obtenirPortadaGran(llibre.getUrlImatge());
+
+         new DescarregarPortada().execute(urlPortada);
 
     }
 
     private class DescarregarPortada extends AsyncTask<String, Void, Bitmap> {
-        ProgressDialog dialog;
+
+
         private Bitmap descarregarBitmap(String sUrl) {
             Bitmap bitmap = null;
             try {
@@ -80,8 +79,8 @@ public class LlibreDetall extends AppCompatActivity {
 
         @Override
         protected void onPreExecute(){
-            dialog = ProgressDialog.show(LlibreDetall.this, "Carregant", "Carregant el llibre...", true);
-            dialog.show();
+           dialog = ProgressDialog.show(LlibreDetall.this, "Carregant", "Carregant el llibre...", true);
+           dialog.show();
         }
 
         @Override
@@ -90,10 +89,15 @@ public class LlibreDetall extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(Bitmap portada){
+        protected void onPostExecute(Bitmap imatge){
+            ivPortada.setImageBitmap(imatge);
             dialog.dismiss();
         }
 
+    }
+
+    private String obtenirPortadaGran(String url){
+        return url.replaceAll("zoom=1", "zoom=0");
     }
 
 

@@ -3490,6 +3490,8 @@ public final class R {
     public static final int switch_thumb_normal_material_light=0x7f06006e;
     public static final int tooltip_background_dark=0x7f06006f;
     public static final int tooltip_background_light=0x7f060070;
+    public static final int translucent_scrim_bottom=0x7f060071;
+    public static final int translucent_scrim_bottom_center=0x7f060072;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f070000;
@@ -3782,8 +3784,9 @@ public final class R {
     public static final int notification_template_icon_low_bg=0x7f080083;
     public static final int notification_tile_bg=0x7f080084;
     public static final int notify_panel_notification_icon_bg=0x7f080085;
-    public static final int tooltip_frame_dark=0x7f080086;
-    public static final int tooltip_frame_light=0x7f080087;
+    public static final int scrim_bottom=0x7f080086;
+    public static final int tooltip_frame_dark=0x7f080087;
+    public static final int tooltip_frame_light=0x7f080088;
   }
   public static final class id {
     public static final int ALT=0x7f090000;
