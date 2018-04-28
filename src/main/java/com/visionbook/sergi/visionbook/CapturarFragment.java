@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.google.android.gms.flags.impl.DataUtils;
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
@@ -30,6 +31,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
@@ -127,6 +129,7 @@ public class CapturarFragment extends Fragment {
 
                                 //Evito els salts de linia i concateno els espais amb el caracter + per a que sigui mes familiar amb la URL
                                 String capturaFinal = stringBuilder.toString().replace("\n", "+").replace(" ", "+");
+                                capturaFinal = treureAccents(capturaFinal);
 
                                 try {
                                     //Obtinc una instancia de llibre per a poder comprobar si s'ha trobat contingut
@@ -200,8 +203,8 @@ public class CapturarFragment extends Fragment {
                         JSONObject volumeInfo = primerLlibre.getJSONObject("volumeInfo");
                         String titol = volumeInfo.getString("title");
                         String descripcio = "Sense descripció";
-                        String editorial = "Editorial no disponible";
-                        String dataPublicacio = "Data no disponible";
+                        String editorial = "-";
+                        String dataPublicacio = "-";
                         int numPag = 0;
 
                         if (volumeInfo.has("pageCount"))
@@ -265,6 +268,12 @@ public class CapturarFragment extends Fragment {
         startCameraSource();
 
         return view;
+    }
+
+    private String treureAccents(String url){
+        String normalize = Normalizer.normalize(url, Normalizer.Form.NFD);
+        String senseAccents = normalize.replaceAll("[^\\p{ASCII}]", "");
+        return senseAccents;
     }
 
 

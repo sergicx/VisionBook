@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.ImageView;
@@ -25,6 +26,7 @@ public class LlibreDetall extends AppCompatActivity {
     private TextView tvResum, tvAutor, tvEditorial, tvNumPag, tvData;
     private ImageView ivPortada;
     private ProgressDialog dialog;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +42,7 @@ public class LlibreDetall extends AppCompatActivity {
         tvNumPag = (TextView) findViewById(R.id.tvNumPag);
         tvData = (TextView) findViewById(R.id.tvData);
 
-        CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
+        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
 
         llibre = (Llibre) getIntent().getParcelableExtra("resultat");
 
@@ -109,7 +111,5 @@ public class LlibreDetall extends AppCompatActivity {
     private String obtenirPortadaGran(String url){
         return url.replaceAll("zoom=1", "zoom=0");
     }
-
-
 
 }
