@@ -21,31 +21,101 @@
             app:cardCornerRadius="6dp"
             app:cardElevation="5dp">
 
-            <TextView
-                android:id="@+id/tvEditorial"
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Detalls del llibre..." />
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Editorial: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvEditorial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nom editorial" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Num. Pagines: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvNumPag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="328" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data publicació: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2003/05/18" />
+                </TableRow>
+
+            </TableLayout>
 
         </android.support.v7.widget.CardView>
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:padding="10dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="5dp">
 
-            <TextView
-                android:id="@+id/tvResum"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Resum del llibre..." />
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sinopsis:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvResum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resum del llibre..." />
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
+
 
     </LinearLayout>
 

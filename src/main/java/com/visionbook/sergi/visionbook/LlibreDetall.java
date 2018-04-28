@@ -22,7 +22,7 @@ import java.util.concurrent.ExecutionException;
 public class LlibreDetall extends AppCompatActivity {
 
     private Llibre llibre;
-    private TextView tvResum, tvAutor;
+    private TextView tvResum, tvAutor, tvEditorial, tvNumPag, tvData;
     private ImageView ivPortada;
     private ProgressDialog dialog;
 
@@ -36,6 +36,9 @@ public class LlibreDetall extends AppCompatActivity {
         tvResum = (TextView) findViewById(R.id.tvResum);
         tvAutor = (TextView) findViewById(R.id.tvAutor);
         ivPortada = (ImageView) findViewById(R.id.ivPortada);
+        tvEditorial = (TextView) findViewById(R.id.tvEditorial);
+        tvNumPag = (TextView) findViewById(R.id.tvNumPag);
+        tvData = (TextView) findViewById(R.id.tvData);
 
         CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
 
@@ -56,6 +59,13 @@ public class LlibreDetall extends AppCompatActivity {
         }
         tvAutor.setText(autorsBuilder.toString());
         tvResum.setText(llibre.getDescripcio());
+        tvEditorial.setText(llibre.getEditorial());
+        if (llibre.getNumPag() > 0)
+            tvNumPag.setText(Integer.toString(llibre.getNumPag()));
+        else
+            tvNumPag.setText("-");
+        tvData.setText(llibre.getDataPublicacio());
+
         String urlPortada = obtenirPortadaGran(llibre.getUrlImatge());
 
          new DescarregarPortada().execute(urlPortada);

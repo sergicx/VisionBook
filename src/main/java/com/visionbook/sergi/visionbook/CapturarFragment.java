@@ -53,7 +53,7 @@ public class CapturarFragment extends Fragment {
 
         mCameraView = (SurfaceView) view.findViewById(R.id.surfaceView);
 
-        //Creo el reconeixedor de textos
+        //Preparo el reconeixedor de textos
         textRecognizer = new TextRecognizer.Builder(getActivity().getApplicationContext()).build();
 
         if (!textRecognizer.isOperational()) {

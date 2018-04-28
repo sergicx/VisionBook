@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1524774721451"
+    timestamp="1524934666679"
     token="-6861340228766409818"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,7 +29,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1524774229549"
+        timestamp="1524934503366"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Sergi\Documents\VisionBook\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1524774721451"
+        timestamp="1524934666679"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Sergi\Documents\VisionBook\app\build\outputs\apk\debug\app-debug.apk"
