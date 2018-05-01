@@ -20,7 +20,6 @@ public class LlibresFragment extends Fragment{
     private SQLite sqLite;
     private SQLiteDatabase db;
     private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private AdaptadorLlibre adaptadorLlibre;
 
@@ -62,6 +61,7 @@ public class LlibresFragment extends Fragment{
         sqLite = SQLite.getInstancia(getContext());
         db = sqLite.getWritableDatabase();
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerLlibres);
+        mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
         omplirLlistaLlibres();

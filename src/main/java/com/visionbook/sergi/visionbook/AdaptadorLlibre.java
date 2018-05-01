@@ -40,8 +40,7 @@ public class AdaptadorLlibre extends RecyclerView.Adapter<AdaptadorLlibre.ViewHo
         // create a new view
         LayoutInflater inflater = LayoutInflater.from(
                 parent.getContext());
-        View v =
-                inflater.inflate(R.layout.row_llibre, parent, false);
+        View v = inflater.inflate(R.layout.row_llibre, parent, false);
         // set the view's size, margins, paddings and layout parameters
         ViewHolder vh = new ViewHolder(v);
         return vh;
