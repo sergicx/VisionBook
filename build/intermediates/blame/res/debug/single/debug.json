@@ -1224,6 +1224,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\be0d4caffe107982944d0423c76b8ed4\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_llibre.xml.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\layout\\row_llibre.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\86e8bc47f0115c3005e93268a117dd3d\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },

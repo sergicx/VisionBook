@@ -3,10 +3,7 @@ package com.visionbook.sergi.visionbook;
 
 import android.Manifest;
 import android.app.Fragment;
-import android.app.ProgressDialog;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -20,19 +17,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.google.android.gms.flags.impl.DataUtils;
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.IOException;
 import java.text.Normalizer;
-import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 
@@ -42,7 +33,7 @@ public class CapturarFragment extends Fragment {
     private SurfaceView mCameraView;
     private View view;
     private TextRecognizer textRecognizer;
-    private final String LOG = "LOG";
+
 
     public CapturarFragment() {
 
@@ -133,13 +124,13 @@ public class CapturarFragment extends Fragment {
 
                                 try {
                                     //Obtinc una instancia de llibre per a poder comprobar si s'ha trobat contingut
-                                    Llibre llibre = new obtenirDadesLlibre().execute(capturaFinal).get();
+                                    Llibre llibre = new ObtenirDadesLlibre(getActivity()).execute(capturaFinal).get();
                                     if (llibre == null){
                                         //Si no l'ha trobat, torno a buscar el llibre pero retallant el text capturat fins a la seva meitat
-                                        llibre = new obtenirDadesLlibre().execute(capturaFinal.substring(0, capturaFinal.length()/2)).get();
+                                        llibre = new ObtenirDadesLlibre(getActivity()).execute(capturaFinal.substring(0, capturaFinal.length()/2)).get();
                                         if (llibre == null){
                                             //Si la casuistica anterior tampoc troba el llibre, retallo el llibre desde la meitat fins al final
-                                            llibre = new obtenirDadesLlibre().execute(capturaFinal.substring(capturaFinal.length()/2, capturaFinal.length())).get();
+                                            llibre = new ObtenirDadesLlibre(getActivity()).execute(capturaFinal.substring(capturaFinal.length()/2, capturaFinal.length())).get();
                                             if (llibre == null){
                                                 //Si no troba el llibre mostro un Toast informant de que no l'ha trobat
                                                 Toast.makeText(getContext(), "Llibre no trobat", Toast.LENGTH_LONG).show();
@@ -171,98 +162,13 @@ public class CapturarFragment extends Fragment {
         startCameraSource();
     }
 
-    private class obtenirDadesLlibre extends AsyncTask<String, Void, Llibre>{
-        ProgressDialog dialog;
 
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            System.out.println("Començant la cerca...");
-            dialog = ProgressDialog.show(getActivity(), "Buscant", "Buscant el llibre...", true);
-            dialog.show();
-        }
-
-        @Override
-        protected Llibre doInBackground(String... strings) {
-            System.out.println("BUSCANT PER: "+ strings[0]);
-            HttpHandler sh = new HttpHandler();
-            //Concateno la url de la consulta a la API amb el text que hagi capturat
-            String url = "https://www.googleapis.com/books/v1/volumes?q="+strings[0];
-            Log.e(LOG, url);
-            //Faig una petició GET utilitzant la classe HttpHandler
-            String jsonStr = sh.makeServiceCall(url);
-
-            if(jsonStr != null){
-                try {
-                    JSONObject jsonObj = new JSONObject(jsonStr);
-                    System.out.println("trobats: "+jsonObj.getInt("totalItems"));
-                    if (jsonObj.getInt("totalItems") > 0){
-                        JSONArray llibres = jsonObj.getJSONArray("items");
-                        JSONObject primerLlibre = llibres.getJSONObject(0);
-                        String id = primerLlibre.getString("id");
-                        JSONObject volumeInfo = primerLlibre.getJSONObject("volumeInfo");
-                        String titol = volumeInfo.getString("title");
-                        String descripcio = "Sense descripció";
-                        String editorial = "-";
-                        String dataPublicacio = "-";
-                        int numPag = 0;
-
-                        if (volumeInfo.has("pageCount"))
-                            numPag = volumeInfo.getInt("pageCount");
-
-                        if(volumeInfo.has("publishedDate"))
-                            dataPublicacio = volumeInfo.getString("publishedDate");
-
-                        if (volumeInfo.has("description"))
-                            descripcio = volumeInfo.getString("description");
-
-                        if (volumeInfo.has("publisher"))
-                            editorial = volumeInfo.getString("publisher");
-
-
-                        String urlImg = volumeInfo.getJSONObject("imageLinks").getString("thumbnail");
-
-                        ArrayList<String> llistaAutors = new ArrayList<>();
-                        JSONArray autorsJSON = volumeInfo.getJSONArray("authors");
-
-
-                        for (int i=0; i< autorsJSON.length(); i++){
-                            llistaAutors.add(autorsJSON.getString(i));
-                        }
-
-                        Llibre llibre = new Llibre(id, titol, llistaAutors, editorial, dataPublicacio, descripcio, numPag, urlImg);
-
-                        llibre.setAutors(llistaAutors);
-                        return llibre;
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Llibre result) {
-            super.onPostExecute(result);
-
-            if (result != null) {
-                //Si ha trobat el llibre a la api, obrirá l'activitat detall pasantli el objecte llibre
-                Intent iResultat = new Intent(getActivity(), LlibreDetall.class);
-                iResultat.putExtra("resultat", result);
-                startActivity(iResultat);
-            }
-
-            dialog.dismiss();
-        }
-
-    }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        //Obtinc la instancia inicial del sqlite
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_capturar, container, false);
         startCameraSource();

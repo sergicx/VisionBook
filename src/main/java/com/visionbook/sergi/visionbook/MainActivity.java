@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle mDrawerToggle;
     private String[] itemsMenu;
     private ListView mDrawerList;
+    private SQLite db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+
+        //Creo una instancia de sqllite per a gestionar la llista de llibres
+        db = SQLite.getInstancia(this);
+        selectItem(0);
 
     }
 
@@ -114,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
         //Executo el fragment depenent de l'opcio seleccionada per l'usuari
         Fragment fragment;
         FragmentManager fragmentManager = getFragmentManager();
+
         switch(position) {
             default:
             case 0:

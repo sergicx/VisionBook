@@ -7,18 +7,13 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.io.IOException;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.concurrent.ExecutionException;
 
 public class LlibreDetall extends AppCompatActivity {
 
@@ -48,18 +43,7 @@ public class LlibreDetall extends AppCompatActivity {
 
         collapsingToolbarLayout.setTitle(llibre.getTitol());
 
-
-
-        //Separo els autors per comes si hi ha mes d'un
-        ArrayList<String> llistaAutors = llibre.getAutors();
-        StringBuilder autorsBuilder = new StringBuilder();
-        for (int i=0; i<llistaAutors.size(); i++){
-            autorsBuilder.append(llistaAutors.get(i));
-            if (i != llistaAutors.size()-1){
-                autorsBuilder.append(", ");
-            }
-        }
-        tvAutor.setText(autorsBuilder.toString());
+        tvAutor.setText(Helper.getLlistaAutors(llibre.getAutors()));
         tvResum.setText(llibre.getDescripcio());
         tvEditorial.setText(llibre.getEditorial());
         if (llibre.getNumPag() > 0)
