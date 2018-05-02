@@ -1,6 +1,8 @@
 package com.visionbook.sergi.visionbook;
 
 import android.app.ProgressDialog;
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -11,9 +13,13 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.visionbook.sergi.visionbook.entitats.Llibre;
+import com.visionbook.sergi.visionbook.helper.Helper;
+import com.visionbook.sergi.visionbook.helper.SQLite;
+
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.net.URL;
-import java.util.ArrayList;
 
 public class LlibreDetall extends AppCompatActivity {
 
@@ -22,6 +28,7 @@ public class LlibreDetall extends AppCompatActivity {
     private ImageView ivPortada;
     private ProgressDialog dialog;
     private CollapsingToolbarLayout collapsingToolbarLayout;
+    private SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +36,8 @@ public class LlibreDetall extends AppCompatActivity {
         setContentView(R.layout.activity_llibre_detall);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarDetall);
         setSupportActionBar(toolbar);
+
+        db = SQLite.getInstancia(this).getWritableDatabase();
 
         tvResum = (TextView) findViewById(R.id.tvResum);
         tvAutor = (TextView) findViewById(R.id.tvAutor);
@@ -54,7 +63,7 @@ public class LlibreDetall extends AppCompatActivity {
 
         String urlPortada = obtenirPortadaGran(llibre.getUrlImatge());
 
-         new DescarregarPortada().execute(urlPortada);
+        new DescarregarPortada().execute(urlPortada);
 
     }
 
@@ -87,6 +96,7 @@ public class LlibreDetall extends AppCompatActivity {
         @Override
         protected void onPostExecute(Bitmap imatge){
             ivPortada.setImageBitmap(imatge);
+            afegirLlibreSql(imatge);
             dialog.dismiss();
         }
 
@@ -94,6 +104,24 @@ public class LlibreDetall extends AppCompatActivity {
 
     private String obtenirPortadaGran(String url){
         return url.replaceAll("zoom=1", "zoom=0");
+    }
+
+    private byte[] convertirPortadaBlob(Bitmap b){
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        b.compress(Bitmap.CompressFormat.JPEG, 20, bos);
+        byte[] img = bos.toByteArray();
+
+        return img;
+    }
+
+    private void afegirLlibreSql(Bitmap imatge){
+        ContentValues registreLlibre = new ContentValues();
+        registreLlibre.put("idLlibre", llibre.getId());
+        registreLlibre.put("titol", llibre.getTitol());
+        registreLlibre.put("autor", Helper.getLlistaAutors(llibre.getAutors()));
+        registreLlibre.put("descripcio", llibre.getDescripcio());
+        registreLlibre.put("portada", convertirPortadaBlob(imatge));
+        db.insert("llibres", null, registreLlibre);
     }
 
 }

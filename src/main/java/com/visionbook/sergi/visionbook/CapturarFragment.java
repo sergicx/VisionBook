@@ -21,6 +21,7 @@ import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
+import com.visionbook.sergi.visionbook.entitats.Llibre;
 
 import java.io.IOException;
 import java.text.Normalizer;

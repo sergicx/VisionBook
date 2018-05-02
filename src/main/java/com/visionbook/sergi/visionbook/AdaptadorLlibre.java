@@ -1,28 +1,29 @@
 package com.visionbook.sergi.visionbook;
 
-import android.content.Context;
+import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import com.visionbook.sergi.visionbook.entitats.Llibre;
+import com.visionbook.sergi.visionbook.helper.Helper;
+
+import java.util.List;
 
 public class AdaptadorLlibre extends RecyclerView.Adapter<AdaptadorLlibre.ViewHolder> {
-    ArrayList<Llibre> llistaLlibres;
-    private Context mContext;
-    private RecyclerView mRecyclerV;
+    List<Llibre> llistaLlibres;
 
-    public AdaptadorLlibre(ArrayList<Llibre> llistaLlibres, Context mContext, RecyclerView mRecyclerV) {
+    public AdaptadorLlibre(List<Llibre> llistaLlibres) {
         this.llistaLlibres = llistaLlibres;
-        this.mContext = mContext;
-        this.mRecyclerV = mRecyclerV;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView tvRowTitol;
         public TextView tvRowAutor;
+        public ImageView ivRowPortada;
 
 
         public View layout;
@@ -32,6 +33,7 @@ public class AdaptadorLlibre extends RecyclerView.Adapter<AdaptadorLlibre.ViewHo
             layout = v;
             tvRowTitol = (TextView) v.findViewById(R.id.tvRowTitol);
             tvRowAutor = (TextView) v.findViewById(R.id.tvRowAutor);
+            ivRowPortada = (ImageView) v.findViewById(R.id.ivRowPortada);
         }
     }
 
@@ -50,6 +52,7 @@ public class AdaptadorLlibre extends RecyclerView.Adapter<AdaptadorLlibre.ViewHo
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.tvRowTitol.setText(llistaLlibres.get(position).getTitol());
         holder.tvRowAutor.setText(Helper.getLlistaAutors(llistaLlibres.get(position).getAutors()));
+        holder.ivRowPortada.setImageBitmap(llistaLlibres.get(position).getbPortada());
     }
 
     @Override

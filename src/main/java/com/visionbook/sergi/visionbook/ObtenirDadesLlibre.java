@@ -7,6 +7,11 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 
+import com.visionbook.sergi.visionbook.entitats.Llibre;
+import com.visionbook.sergi.visionbook.helper.Helper;
+import com.visionbook.sergi.visionbook.helper.HttpHandler;
+import com.visionbook.sergi.visionbook.helper.SQLite;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -101,13 +106,7 @@ public class ObtenirDadesLlibre extends AsyncTask<String, Void, Llibre> {
         super.onPostExecute(result);
 
         if (result != null) {
-            //Si ha trobat el llibre a la api, s'afegirá el llibre al sqlite i obrirá l'activitat detall pasantli el objecte llibre
-            ContentValues registreLlibre = new ContentValues();
-            registreLlibre.put("idLlibre", result.getId());
-            registreLlibre.put("titol", result.getTitol());
-            registreLlibre.put("autor", Helper.getLlistaAutors(result.getAutors()));
-            registreLlibre.put("descripcio", result.getDescripcio());
-            db.insert("llibres", null, registreLlibre);
+            //Si ha trobat el llibre a la api, s'obrirá l'activitat detall pasantli el objecte llibre
 
             Intent iResultat = new Intent(context, LlibreDetall.class);
             iResultat.putExtra("resultat", result);

@@ -1,4 +1,4 @@
-#Tue May 01 20:26:43 CEST 2018
-base.0=C\:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+#Wed May 02 22:48:58 CEST 2018
+base.0=C\:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
 path.0=classes.dex
 renamed.0=classes.dex

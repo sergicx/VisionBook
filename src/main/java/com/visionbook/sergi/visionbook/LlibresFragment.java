@@ -3,6 +3,8 @@ package com.visionbook.sergi.visionbook;
 import android.app.Fragment;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -12,7 +14,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.visionbook.sergi.visionbook.entitats.Llibre;
+import com.visionbook.sergi.visionbook.helper.Helper;
+import com.visionbook.sergi.visionbook.helper.SQLite;
+
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class LlibresFragment extends Fragment{
@@ -29,7 +36,7 @@ public class LlibresFragment extends Fragment{
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void omplirLlistaLlibres(){
-        ArrayList<Llibre> llistaLlibres = new ArrayList<>();
+        List<Llibre> llistaLlibres = new ArrayList<>();
 
         Cursor cLlibre = db.rawQuery("SELECT * FROM llibres ORDER BY id DESC", null);
 
@@ -39,13 +46,16 @@ public class LlibresFragment extends Fragment{
                 llibre.setId(cLlibre.getString(1));
                 llibre.setTitol(cLlibre.getString(2));
                 llibre.setAutors(Helper.convertirALlistaAutors(cLlibre.getString(3)));
+                byte[] blobPortada = cLlibre.getBlob(5);
+                Bitmap portadaRaw = BitmapFactory.decodeByteArray(blobPortada, 0 ,blobPortada.length);
+                llibre.setbPortada(portadaRaw);
 
                 llistaLlibres.add(llibre);
             } while (cLlibre.moveToNext());
         }
 
         if (llistaLlibres.size() > 0) {
-            adaptadorLlibre = new AdaptadorLlibre(llistaLlibres, getContext(), mRecyclerView);
+            adaptadorLlibre = new AdaptadorLlibre(llistaLlibres);
             mRecyclerView.setAdapter(adaptadorLlibre);
         }
     }
@@ -60,11 +70,13 @@ public class LlibresFragment extends Fragment{
         View view = inflater.inflate(R.layout.fragment_llibres, container, false);
         sqLite = SQLite.getInstancia(getContext());
         db = sqLite.getWritableDatabase();
+
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerLlibres);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getContext());
         mRecyclerView.setLayoutManager(mLayoutManager);
         omplirLlistaLlibres();
+
 
         return view;
     }
