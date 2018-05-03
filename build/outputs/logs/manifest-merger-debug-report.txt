@@ -10,12 +10,12 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Sergi\.gradle\cac
 MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.1.0.aar\3b26c9e969a91f4144ea958f3dbf84d9\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\806f9be075cd18bba123a100d7f1c7ab\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-vision-common:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-15.0.0.aar\3b40974f986cb273381b2ece3d1af88c\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-clearcut:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.0.aar\2ce359528379fb7c0e0833f5f7e3e5ee\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-flags:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-flags-15.0.0.aar\b11e3c8763774c40ef1fd88859a5ee31\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-phenotype:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.0.aar\9a0a85c49f946adf377c945f79180c0a\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\09448e52be4ef14951c64f586efe6d79\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\e1b71c4357a09c210ed58e099fcd0ba5\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-clearcut:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.1.aar\572ebe6e13d370a8873e9040f91b43ce\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-flags-15.0.1.aar\99623e6c6c5038e600266e5d1dcb8040\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-phenotype:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.1.aar\3ca21e97b3952a15282269deab4dbb9c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\aa0bcf704ab06ae6551e4aaef913d438\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\c273ed5b66dab597910235d8fca00149\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:transition:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\1e45256a70af357a21184f49852b04be\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\bde83d88250ec9fac7e0d5baeb1df22a\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\fb1356484bb5af95bfb7434592b1833d\AndroidManifest.xml:17:1-28:12
@@ -70,16 +70,16 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Se
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\806f9be075cd18bba123a100d7f1c7ab\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-vision-common:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-15.0.0.aar\3b40974f986cb273381b2ece3d1af88c\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision-common:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-15.0.0.aar\3b40974f986cb273381b2ece3d1af88c\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.0.aar\2ce359528379fb7c0e0833f5f7e3e5ee\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.0.aar\2ce359528379fb7c0e0833f5f7e3e5ee\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.0.aar\9a0a85c49f946adf377c945f79180c0a\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-phenotype:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.0.aar\9a0a85c49f946adf377c945f79180c0a\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\09448e52be4ef14951c64f586efe6d79\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\09448e52be4ef14951c64f586efe6d79\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\e1b71c4357a09c210ed58e099fcd0ba5\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\e1b71c4357a09c210ed58e099fcd0ba5\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-clearcut:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.1.aar\572ebe6e13d370a8873e9040f91b43ce\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.1.aar\572ebe6e13d370a8873e9040f91b43ce\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.1.aar\3ca21e97b3952a15282269deab4dbb9c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-phenotype:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.1.aar\3ca21e97b3952a15282269deab4dbb9c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\aa0bcf704ab06ae6551e4aaef913d438\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\aa0bcf704ab06ae6551e4aaef913d438\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\c273ed5b66dab597910235d8fca00149\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\c273ed5b66dab597910235d8fca00149\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\1e45256a70af357a21184f49852b04be\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\1e45256a70af357a21184f49852b04be\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\bde83d88250ec9fac7e0d5baeb1df22a\AndroidManifest.xml:25:5-29:19
@@ -160,18 +160,18 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Se
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\806f9be075cd18bba123a100d7f1c7ab\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-vision-common:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-15.0.0.aar\3b40974f986cb273381b2ece3d1af88c\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-vision-common:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-15.0.0.aar\3b40974f986cb273381b2ece3d1af88c\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.0.aar\2ce359528379fb7c0e0833f5f7e3e5ee\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-clearcut:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.0.aar\2ce359528379fb7c0e0833f5f7e3e5ee\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-flags-15.0.0.aar\b11e3c8763774c40ef1fd88859a5ee31\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-flags:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-flags-15.0.0.aar\b11e3c8763774c40ef1fd88859a5ee31\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.0.aar\9a0a85c49f946adf377c945f79180c0a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-phenotype:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.0.aar\9a0a85c49f946adf377c945f79180c0a\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\09448e52be4ef14951c64f586efe6d79\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.0.aar\09448e52be4ef14951c64f586efe6d79\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\e1b71c4357a09c210ed58e099fcd0ba5\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\e1b71c4357a09c210ed58e099fcd0ba5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.1.aar\572ebe6e13d370a8873e9040f91b43ce\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-clearcut:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-15.0.1.aar\572ebe6e13d370a8873e9040f91b43ce\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-flags-15.0.1.aar\99623e6c6c5038e600266e5d1dcb8040\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-flags-15.0.1.aar\99623e6c6c5038e600266e5d1dcb8040\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.1.aar\3ca21e97b3952a15282269deab4dbb9c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-phenotype:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-phenotype-15.0.1.aar\3ca21e97b3952a15282269deab4dbb9c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\aa0bcf704ab06ae6551e4aaef913d438\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-15.0.1.aar\aa0bcf704ab06ae6551e4aaef913d438\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\c273ed5b66dab597910235d8fca00149\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\c273ed5b66dab597910235d8fca00149\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\1e45256a70af357a21184f49852b04be\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\transition-26.1.0.aar\1e45256a70af357a21184f49852b04be\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\bde83d88250ec9fac7e0d5baeb1df22a\AndroidManifest.xml:21:5-23:54
@@ -237,19 +237,19 @@ MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Sergi\.gradle\c
 	android:name
 		ADDED from [com.android.support:design:26.1.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\36d2b9e4f1a1fd84d61eb5a352c83342\AndroidManifest.xml:27:13-51
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.0.aar\74524181bf1c7231a91677c4577293da\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-base-15.0.1.aar\e522fe45f7120fa1645089ea8b8340cd\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\e1b71c4357a09c210ed58e099fcd0ba5\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\c273ed5b66dab597910235d8fca00149\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\e1b71c4357a09c210ed58e099fcd0ba5\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\c273ed5b66dab597910235d8fca00149\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.0.aar\e1b71c4357a09c210ed58e099fcd0ba5\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\play-services-basement-15.0.1.aar\c273ed5b66dab597910235d8fca00149\AndroidManifest.xml:24:13-58
 meta-data#android.arch.lifecycle.VERSION
 ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Sergi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a7b911c9718aee80037beb91e72a1359\AndroidManifest.xml:25:9-27:47
 	android:value

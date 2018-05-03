@@ -34,7 +34,6 @@ public class LlibresFragment extends Fragment{
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     private void omplirLlistaLlibres(){
         List<Llibre> llistaLlibres = new ArrayList<>();
 
@@ -55,25 +54,23 @@ public class LlibresFragment extends Fragment{
         }
 
         if (llistaLlibres.size() > 0) {
-            adaptadorLlibre = new AdaptadorLlibre(llistaLlibres);
+            adaptadorLlibre = new AdaptadorLlibre(llistaLlibres, mRecyclerView);
             mRecyclerView.setAdapter(adaptadorLlibre);
         }
     }
 
-
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_llibres, container, false);
-        sqLite = SQLite.getInstancia(getContext());
+        sqLite = SQLite.getInstancia(getActivity());
         db = sqLite.getWritableDatabase();
 
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerLlibres);
         mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(getContext());
+        mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
         omplirLlistaLlibres();
 

@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.0.aar\\e1b71c4357a09c210ed58e099fcd0ba5\\res\\values-ro\\values.xml",
+                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\c273ed5b66dab597910235d8fca00149\\res\\values-ro\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.0.aar\\74524181bf1c7231a91677c4577293da\\res\\values-ro\\values.xml",
+                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\e522fe45f7120fa1645089ea8b8340cd\\res\\values-ro\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

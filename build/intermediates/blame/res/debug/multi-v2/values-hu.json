@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.0.aar\\e1b71c4357a09c210ed58e099fcd0ba5\\res\\values-hu\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "235",
-                        "endOffsets": "482"
-                    },
-                    "to": {
-                        "startLines": "29",
-                        "startColumns": "4",
-                        "startOffsets": "3359",
-                        "endColumns": "235",
-                        "endOffsets": "3590"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.0.aar\\74524181bf1c7231a91677c4577293da\\res\\values-hu\\values.xml",
+                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\e522fe45f7120fa1645089ea8b8340cd\\res\\values-hu\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "2121,2234,2450,2590,2701,2928,3068,3220,3595,3824,3934,4150,4289,4520,4722,4823,4921",
                         "endColumns": "112,215,139,110,226,139,151,138,228,109,215,138,230,201,100,97,116",
                         "endOffsets": "2229,2445,2585,2696,2923,3063,3215,3354,3819,3929,4145,4284,4515,4717,4818,4916,5033"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\c273ed5b66dab597910235d8fca00149\\res\\values-hu\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "235",
+                        "endOffsets": "482"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "3359",
+                        "endColumns": "235",
+                        "endOffsets": "3590"
                     }
                 }
             ]

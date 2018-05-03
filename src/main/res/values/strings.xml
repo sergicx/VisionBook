@@ -2,7 +2,7 @@
     <string name="app_name">Vision Book</string>
 
     <string-array name="itemsMenu">
-        <item>Libros</item>
+        <item>Libros capturados</item>
         <item>Capturar libro</item>
         <item>Sobre la app</item>
     </string-array>

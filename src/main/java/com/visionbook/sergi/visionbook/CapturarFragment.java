@@ -40,7 +40,6 @@ public class CapturarFragment extends Fragment {
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     private void startCameraSource() {
         mCameraView = null;
         mCameraSource = null;
@@ -91,7 +90,7 @@ public class CapturarFragment extends Fragment {
             //Obligo al usuari a fer clic a la pantalla per a començar amb el reconeixement de text
             //ja que a vegades la camara no está enfoocada
             mCameraView.setOnClickListener((View v) -> {
-                Toast.makeText(getContext(), "Buscant llibre, no moguis el dispositiu...", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), "Buscant llibre, no moguis el dispositiu...", Toast.LENGTH_LONG).show();
 
                 //Inicio el detector de textos
                 textRecognizer.setProcessor(new Detector.Processor<TextBlock>() {
@@ -106,7 +105,6 @@ public class CapturarFragment extends Fragment {
                     //Primer comprobo si la quantitat de lletres processades es major de 0 i aleshores
                     //inicio un fil per a concatenar totes les lletres trobades i faig una cerca del text
                     //detectat a la api de llibres de google
-                    @RequiresApi(api = Build.VERSION_CODES.M)
                     @Override
                     public void receiveDetections(Detector.Detections<TextBlock> detections) {
                         final SparseArray<TextBlock> items = detections.getDetectedItems();
@@ -134,7 +132,7 @@ public class CapturarFragment extends Fragment {
                                             llibre = new ObtenirDadesLlibre(getActivity()).execute(capturaFinal.substring(capturaFinal.length()/2, capturaFinal.length())).get();
                                             if (llibre == null){
                                                 //Si no troba el llibre mostro un Toast informant de que no l'ha trobat
-                                                Toast.makeText(getContext(), "Llibre no trobat", Toast.LENGTH_LONG).show();
+                                                Toast.makeText(getActivity(), "Llibre no trobat", Toast.LENGTH_LONG).show();
                                                 //Torno a executar el fragment
                                                 getFragmentManager().beginTransaction().detach(CapturarFragment.this).attach(CapturarFragment.this).commit();
                                             }
@@ -157,7 +155,6 @@ public class CapturarFragment extends Fragment {
     }
 
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     public void onResume() {
         super.onResume();
         startCameraSource();
@@ -165,7 +162,6 @@ public class CapturarFragment extends Fragment {
 
 
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

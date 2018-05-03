@@ -1,6 +1,7 @@
 package com.visionbook.sergi.visionbook;
 
 import android.graphics.Bitmap;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,8 +17,20 @@ import java.util.List;
 public class AdaptadorLlibre extends RecyclerView.Adapter<AdaptadorLlibre.ViewHolder> {
     List<Llibre> llistaLlibres;
 
-    public AdaptadorLlibre(List<Llibre> llistaLlibres) {
+    public AdaptadorLlibre(List<Llibre> llistaLlibres, RecyclerView recyclerView) {
         this.llistaLlibres = llistaLlibres;
+
+//        final LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
+//        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+//            @Override
+//            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+//                super.onScrolled(recyclerView, dx, dy);
+//                if (linearLayoutManager.findLastCompletelyVisibleItemPosition() == getItemCount()-1){
+//                    System.out.println("CARREGAR MES ITEMS!");
+//                }
+//            }
+//        });
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

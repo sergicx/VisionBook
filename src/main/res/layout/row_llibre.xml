@@ -14,14 +14,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="5dp">
+                android:layout_weight="0">
 
                 <ImageView
                     android:id="@+id/ivRowPortada"
@@ -30,23 +30,39 @@
                     android:layout_weight="1"
                     android:scaleType="centerCrop" />
 
-                <TextView
-                    android:id="@+id/tvRowTitol"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Titol"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="30sp" />
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@color/common_google_signin_btn_text_light_default"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tvRowAutor"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Autor" />
+                    <TextView
+                        android:id="@+id/tvRowTitol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Titol"
+                        android:textColor="#FFF"
+                        android:maxEms="28"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="25sp" />
 
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvRowAutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Autor"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+            </FrameLayout>
 
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
 
 </LinearLayout>
