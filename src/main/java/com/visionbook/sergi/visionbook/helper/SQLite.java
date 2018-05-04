@@ -24,7 +24,8 @@ public class SQLite extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         System.out.println("Base de dades creada!");
-        db.execSQL("CREATE TABLE llibres (id integer PRIMARY KEY AUTOINCREMENT NOT NULL , idllibre text, titol text, autor text, descripcio text, portada BLOB)");
+        db.execSQL("CREATE TABLE llibres (id integer PRIMARY KEY AUTOINCREMENT NOT NULL , idllibre text, titol text, autor text, descripcio text, " +
+                "editorial text, numpag text, data text, urlportada text, portada BLOB)");
 }
 
     @Override

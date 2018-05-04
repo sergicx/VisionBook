@@ -1,5 +1,6 @@
 package com.visionbook.sergi.visionbook;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -66,6 +67,13 @@ public class AdaptadorLlibre extends RecyclerView.Adapter<AdaptadorLlibre.ViewHo
         holder.tvRowTitol.setText(llistaLlibres.get(position).getTitol());
         holder.tvRowAutor.setText(Helper.getLlistaAutors(llistaLlibres.get(position).getAutors()));
         holder.ivRowPortada.setImageBitmap(llistaLlibres.get(position).getbPortada());
+
+        holder.itemView.setOnClickListener((View e) ->{
+            Intent iResultat = new Intent(holder.itemView.getContext(), LlibreDetall.class);
+            iResultat.putExtra("resultat", llistaLlibres.get(position));
+            iResultat.putExtra("capturat", false);
+            holder.itemView.getContext().startActivity(iResultat);
+        });
     }
 
     @Override

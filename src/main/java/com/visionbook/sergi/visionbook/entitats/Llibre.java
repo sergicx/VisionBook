@@ -19,7 +19,6 @@ public class Llibre implements Parcelable{
     private Bitmap bPortada;
 
     public Llibre() {
-
     }
 
     public Llibre(String id, String titol, ArrayList<String> autors, String editorial, String dataPublicacio, String descripcio, int numPag, String urlImatge) {

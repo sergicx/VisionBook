@@ -110,6 +110,7 @@ public class ObtenirDadesLlibre extends AsyncTask<String, Void, Llibre> {
 
             Intent iResultat = new Intent(context, LlibreDetall.class);
             iResultat.putExtra("resultat", result);
+            iResultat.putExtra("capturat", true);
             context.startActivity(iResultat);
         }
 

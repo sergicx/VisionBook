@@ -39,13 +39,22 @@ public class LlibresFragment extends Fragment{
 
         Cursor cLlibre = db.rawQuery("SELECT * FROM llibres ORDER BY id DESC", null);
 
+        /*db.execSQL("CREATE TABLE llibres (id integer PRIMARY KEY AUTOINCREMENT NOT NULL , idllibre text, titol text, autor text, descripcio text, " +
+                "editorial text, numpag text, data text, urlportada text, portada BLOB)");
+                */
+
         if (cLlibre.moveToFirst()) {
             do {
                 Llibre llibre = new Llibre();
                 llibre.setId(cLlibre.getString(1));
                 llibre.setTitol(cLlibre.getString(2));
                 llibre.setAutors(Helper.convertirALlistaAutors(cLlibre.getString(3)));
-                byte[] blobPortada = cLlibre.getBlob(5);
+                llibre.setDescripcio(cLlibre.getString(4));
+                llibre.setEditorial(cLlibre.getString(5));
+                llibre.setNumPag(Integer.parseInt(cLlibre.getString(6)));
+                llibre.setDataPublicacio(cLlibre.getString(7));
+                llibre.setUrlImatge(cLlibre.getString(8));
+                byte[] blobPortada = cLlibre.getBlob(9);
                 Bitmap portadaRaw = BitmapFactory.decodeByteArray(blobPortada, 0 ,blobPortada.length);
                 llibre.setbPortada(portadaRaw);
 

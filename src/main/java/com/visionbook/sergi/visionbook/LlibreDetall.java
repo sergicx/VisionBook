@@ -2,6 +2,7 @@ package com.visionbook.sergi.visionbook;
 
 import android.app.ProgressDialog;
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -29,6 +30,7 @@ public class LlibreDetall extends AppCompatActivity {
     private ProgressDialog dialog;
     private CollapsingToolbarLayout collapsingToolbarLayout;
     private SQLiteDatabase db;
+    private boolean capturat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,7 @@ public class LlibreDetall extends AppCompatActivity {
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
 
         llibre = (Llibre) getIntent().getParcelableExtra("resultat");
+        capturat = getIntent().getBooleanExtra("capturat", true);
 
         collapsingToolbarLayout.setTitle(llibre.getTitol());
 
@@ -84,7 +87,7 @@ public class LlibreDetall extends AppCompatActivity {
 
         @Override
         protected void onPreExecute(){
-           dialog = ProgressDialog.show(LlibreDetall.this, "Carregant", "Carregant el llibre...", true);
+           dialog = ProgressDialog.show(LlibreDetall.this, "Carregant...", "Carregant el llibre...", true);
            dialog.show();
         }
 
@@ -96,7 +99,13 @@ public class LlibreDetall extends AppCompatActivity {
         @Override
         protected void onPostExecute(Bitmap imatge){
             ivPortada.setImageBitmap(imatge);
-            afegirLlibreSql(imatge);
+            if (!existeixLlibre(llibre.getId()))
+                afegirLlibreSql(imatge);
+            else if (capturat){
+                eliminarLlibre(llibre.getId());
+                afegirLlibreSql(imatge);
+            }
+
             dialog.dismiss();
         }
 
@@ -116,12 +125,30 @@ public class LlibreDetall extends AppCompatActivity {
 
     private void afegirLlibreSql(Bitmap imatge){
         ContentValues registreLlibre = new ContentValues();
-        registreLlibre.put("idLlibre", llibre.getId());
+        registreLlibre.put("idllibre", llibre.getId());
         registreLlibre.put("titol", llibre.getTitol());
         registreLlibre.put("autor", Helper.getLlistaAutors(llibre.getAutors()));
         registreLlibre.put("descripcio", llibre.getDescripcio());
         registreLlibre.put("portada", convertirPortadaBlob(imatge));
+        registreLlibre.put("editorial", llibre.getEditorial());
+        registreLlibre.put("numpag", llibre.getNumPag());
+        registreLlibre.put("data", llibre.getDataPublicacio());
+        registreLlibre.put("urlportada", llibre.getUrlImatge());
         db.insert("llibres", null, registreLlibre);
     }
+
+    private boolean existeixLlibre(String idLlibre){
+        Cursor cLlibre = db.rawQuery("SELECT * FROM llibres WHERE idllibre = " + "'" + idLlibre + "'", null);
+
+        if (cLlibre.moveToFirst()) return true;
+
+        return false;
+    }
+
+    private void eliminarLlibre(String idLlibre){
+        db.delete("llibres", "idllibre" + "= '" + idLlibre + "'", null);
+    }
+
+
 
 }
