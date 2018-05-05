@@ -40,14 +40,13 @@
 
             <TextView
                 android:id="@+id/tvAutor"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="55dp"
                 android:text="Autor/a aqui"
                 android:textColor="@android:color/white"
-                android:textSize="16sp"
-                app:layout_collapseMode="pin" />
+                android:textSize="16sp" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbarDetall"

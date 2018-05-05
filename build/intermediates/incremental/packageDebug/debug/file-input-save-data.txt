@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat May 05 20:19:17 CEST 2018
+#Sat May 05 23:11:53 CEST 2018
 2.base=C\:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 5.set=DEX
 0.path=classes.dex

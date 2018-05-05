@@ -8,9 +8,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,9 +23,8 @@ import com.visionbook.sergi.visionbook.helper.SQLite;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.net.URL;
-import java.util.concurrent.ExecutionException;
 
-public class LlibreDetall extends AppCompatActivity {
+public class LlibreDetall extends AppCompatActivity{
 
     private Llibre llibre;
     private TextView tvResum, tvAutor, tvEditorial, tvNumPag, tvData;
@@ -39,6 +40,8 @@ public class LlibreDetall extends AppCompatActivity {
         setContentView(R.layout.activity_llibre_detall);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarDetall);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener((View) -> onBackPressed());
 
         db = SQLite.getInstancia(this).getWritableDatabase();
 
@@ -70,8 +73,8 @@ public class LlibreDetall extends AppCompatActivity {
 
         new DescarregarPortada(true).execute(urlPortadaGran);
         new DescarregarPortada(false).execute(urlPortadaPetita);
-
     }
+
 
     private class DescarregarPortada extends AsyncTask<String, Void, Bitmap> {
 
