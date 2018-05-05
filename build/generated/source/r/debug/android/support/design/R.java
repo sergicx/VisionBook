@@ -999,14 +999,14 @@ public final class R {
         public static final int abc_toolbar_collapse_description = 0x7f0e001e;
         public static final int appbar_scrolling_view_behavior = 0x7f0e0021;
         public static final int bottom_sheet_behavior = 0x7f0e0022;
-        public static final int character_counter_pattern = 0x7f0e0024;
-        public static final int password_toggle_content_description = 0x7f0e0039;
-        public static final int path_password_eye = 0x7f0e003a;
-        public static final int path_password_eye_mask_strike_through = 0x7f0e003b;
-        public static final int path_password_eye_mask_visible = 0x7f0e003c;
-        public static final int path_password_strike_through = 0x7f0e003d;
-        public static final int search_menu_title = 0x7f0e003e;
-        public static final int status_bar_notification_info_overflow = 0x7f0e0040;
+        public static final int character_counter_pattern = 0x7f0e0028;
+        public static final int password_toggle_content_description = 0x7f0e0040;
+        public static final int path_password_eye = 0x7f0e0041;
+        public static final int path_password_eye_mask_strike_through = 0x7f0e0042;
+        public static final int path_password_eye_mask_visible = 0x7f0e0043;
+        public static final int path_password_strike_through = 0x7f0e0044;
+        public static final int search_menu_title = 0x7f0e0045;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0048;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat = 0x7f0f0000;

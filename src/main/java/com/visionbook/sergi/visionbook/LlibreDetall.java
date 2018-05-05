@@ -87,7 +87,7 @@ public class LlibreDetall extends AppCompatActivity {
 
         @Override
         protected void onPreExecute(){
-           dialog = ProgressDialog.show(LlibreDetall.this, "Carregant...", "Carregant el llibre...", true);
+           dialog = ProgressDialog.show(LlibreDetall.this, getResources().getString(R.string.carregant1), getResources().getString(R.string.carregant2), true);
            dialog.show();
         }
 

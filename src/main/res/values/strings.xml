@@ -2,14 +2,22 @@
     <string name="app_name">Vision Book</string>
 
     <string-array name="itemsMenu">
-        <item>Libros capturados</item>
-        <item>Capturar libro</item>
-        <item>Sobre la app</item>
+        <item>Captured books</item>
+        <item>Capture book</item>
+        <item>About VisionBook</item>
     </string-array>
     
-    <string name="buscant_llibre">Buscant llibre, no moguis el dispositiu...</string>
-    <string name="llibre_no_trobat">Llibre no trobat</string>
-    <string name="sense_descripcio">Llibre sense descripció</string>
+    <string name="buscant_llibre">Searching book, don\'t move the device...</string>
+    <string name="llibre_no_trobat">Book not found</string>
+    <string name="sense_descripcio">Book without synopsis</string>
+    <string name="editorial">"Publisher: "</string>
+    <string name="num_pags">"Num. Pages: "</string>
+    <string name="data_publicacio">"Publish date: "</string>
+    <string name="sinopsis">"Synopsis: "</string>
+    <string name="carregant1">Loading...</string>
+    <string name="carregant2">Loading book...</string>
+    <string name="buscant">Searching...</string>
+    <string name="buscant_el_llibre">Searching book...</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

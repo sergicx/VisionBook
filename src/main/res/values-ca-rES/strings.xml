@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Vision Book</string>
+
+    <string-array name="itemsMenu">
+        <item>Llibres capturats</item>
+        <item>Capturar llibre</item>
+        <item>Sobre VisionBook</item>
+    </string-array>
+
+    <string name="buscant_llibre">Buscant llibre, no moguis el dispositiu...</string>
+    <string name="llibre_no_trobat">Llibre no trobat</string>
+    <string name="sense_descripcio">Llibre sense sinopsi</string>
+    <string name="editorial">Editorial: </string>
+    <string name="num_pags">Num. Pagines: </string>
+    <string name="data_publicacio">Data publicació: </string>
+    <string name="sinopsis">"Sinopsi: "</string>
+    <string name="carregant1">Carregant...</string>
+    <string name="carregant2">Carregant llibre...</string>
+    <string name="buscant">Buscant...</string>
+    <string name="buscant_el_llibre">Buscant el llibre...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_llibre_detall">LlibreDetall</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

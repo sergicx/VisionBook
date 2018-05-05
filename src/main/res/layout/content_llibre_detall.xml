@@ -34,7 +34,7 @@
                         android:id="@+id/textView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Editorial: "
+                        android:text="@string/editorial"
                         android:textStyle="bold" />
 
                     <TextView
@@ -53,7 +53,7 @@
                         android:id="@+id/textView7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Num. Pagines: "
+                        android:text="@string/num_pags"
                         android:textStyle="bold" />
 
                     <TextView
@@ -71,7 +71,7 @@
                         android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Data publicació: "
+                        android:text="@string/data_publicacio"
                         android:textStyle="bold" />
 
                     <TextView
@@ -103,7 +103,7 @@
                     android:id="@+id/textView11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sinopsis:"
+                    android:text="@string/sinopsis"
                     android:textStyle="bold" />
 
                 <TextView

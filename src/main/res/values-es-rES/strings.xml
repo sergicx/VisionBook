@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Vision Book</string>
+
+    <string-array name="itemsMenu">
+        <item>Libros capturados</item>
+        <item>Capturar libro</item>
+        <item>Sobre VisionBook</item>
+    </string-array>
+
+    <string name="buscant_llibre">Buscando libro, no mueva el dispositivo...</string>
+    <string name="llibre_no_trobat">Libro no encontrado</string>
+    <string name="sense_descripcio">Libro sin sinopsis</string>
+    <string name="editorial">Editorial: </string>
+    <string name="num_pags">"Num. Paginas: "</string>
+    <string name="data_publicacio">"Data publicación: "</string>
+    <string name="sinopsis">Sinopsis: </string>
+    <string name="carregant1">Cargando...</string>
+    <string name="carregant2">Cargando libro...</string>
+    <string name="buscant">Buscando...</string>
+    <string name="buscant_el_llibre">Buscando el libro...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_llibre_detall">LlibreDetall</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -88,7 +88,7 @@ public class CapturarFragment extends Fragment {
             //Obligo al usuari a fer clic a la pantalla per a començar amb el reconeixement de text
             //ja que a vegades la camara no está enfoocada
             mCameraView.setOnClickListener((View v) -> {
-                Toast.makeText(getActivity(), "Buscant llibre, no moguis el dispositiu...", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), getResources().getString(R.string.buscant_llibre), Toast.LENGTH_LONG).show();
 
                 //Inicio el detector de textos
                 textRecognizer.setProcessor(new Detector.Processor<TextBlock>() {
@@ -130,7 +130,7 @@ public class CapturarFragment extends Fragment {
                                             llibre = new ObtenirDadesLlibre(getActivity()).execute(capturaFinal.substring(capturaFinal.length()/2, capturaFinal.length())).get();
                                             if (llibre == null){
                                                 //Si no troba el llibre mostro un Toast informant de que no l'ha trobat
-                                                Toast.makeText(getActivity(), "Llibre no trobat", Toast.LENGTH_LONG).show();
+                                                Toast.makeText(getActivity(), getResources().getString(R.string.llibre_no_trobat), Toast.LENGTH_LONG).show();
                                                 //Torno a executar el fragment
                                                 getFragmentManager().beginTransaction().detach(CapturarFragment.this).attach(CapturarFragment.this).commit();
                                             }
