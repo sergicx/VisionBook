@@ -21,6 +21,7 @@ import com.visionbook.sergi.visionbook.helper.SQLite;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.concurrent.ExecutionException;
 
 public class LlibreDetall extends AppCompatActivity {
 
@@ -64,14 +65,21 @@ public class LlibreDetall extends AppCompatActivity {
             tvNumPag.setText("-");
         tvData.setText(llibre.getDataPublicacio());
 
-        String urlPortada = obtenirPortadaGran(llibre.getUrlImatge());
+        String urlPortadaGran = obtenirPortadaGran(llibre.getUrlImatge());
+        String urlPortadaPetita = obtenirPortadaPetita(llibre.getUrlImatge());
 
-        new DescarregarPortada().execute(urlPortada);
+        new DescarregarPortada(true).execute(urlPortadaGran);
+        new DescarregarPortada(false).execute(urlPortadaPetita);
 
     }
 
     private class DescarregarPortada extends AsyncTask<String, Void, Bitmap> {
 
+        private boolean isPortadaGran;
+
+        public DescarregarPortada(boolean portadaGran) {
+            this.isPortadaGran = portadaGran;
+        }
 
         private Bitmap descarregarBitmap(String sUrl) {
             Bitmap bitmap = null;
@@ -87,8 +95,10 @@ public class LlibreDetall extends AppCompatActivity {
 
         @Override
         protected void onPreExecute(){
-           dialog = ProgressDialog.show(LlibreDetall.this, getResources().getString(R.string.carregant1), getResources().getString(R.string.carregant2), true);
-           dialog.show();
+            if (isPortadaGran) {
+                dialog = ProgressDialog.show(LlibreDetall.this, getResources().getString(R.string.carregant1), getResources().getString(R.string.carregant2), true);
+                dialog.show();
+            }
         }
 
         @Override
@@ -98,26 +108,32 @@ public class LlibreDetall extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Bitmap imatge){
-            ivPortada.setImageBitmap(imatge);
-            if (!existeixLlibre(llibre.getId()))
-                afegirLlibreSql(imatge);
-            else if (capturat){
-                eliminarLlibre(llibre.getId());
-                afegirLlibreSql(imatge);
+            if (isPortadaGran){
+                ivPortada.setImageBitmap(imatge);
+            }else{
+                if (!existeixLlibre(llibre.getId()))
+                    afegirLlibreSql(imatge);
+                else if (capturat){
+                    eliminarLlibre(llibre.getId());
+                    afegirLlibreSql(imatge);
+                }
             }
 
-            dialog.dismiss();
+            if (isPortadaGran) dialog.dismiss();
         }
-
     }
 
     private String obtenirPortadaGran(String url){
         return url.replaceAll("zoom=1", "zoom=0");
     }
 
+    private String obtenirPortadaPetita(String url){
+        return url.replaceAll("zoom=1", "zoom=2");
+    }
+
     private byte[] convertirPortadaBlob(Bitmap b){
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        b.compress(Bitmap.CompressFormat.JPEG, 20, bos);
+        b.compress(Bitmap.CompressFormat.JPEG, 100, bos);
         byte[] img = bos.toByteArray();
 
         return img;
