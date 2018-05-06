@@ -13,7 +13,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.visionbook.sergi.visionbook.entitats.Llibre;
 import com.visionbook.sergi.visionbook.helper.Helper;
 import com.visionbook.sergi.visionbook.helper.SQLite;
@@ -82,6 +85,10 @@ public class LlibresFragment extends Fragment{
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
         omplirLlistaLlibres();
+
+        FirebaseUser usuari = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (usuari != null) Toast.makeText(getActivity(), usuari.getDisplayName(), Toast.LENGTH_SHORT).show();
 
 
         return view;
