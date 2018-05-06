@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\86e8bc47f0115c3005e93268a117dd3d\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\0521388f83bd68b5a902e8c6f66d037c\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\36d2b9e4f1a1fd84d61eb5a352c83342\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\fb82060b826711a66f9799e5fd7e5170\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "63369256541",
+    "firebase_url": "https://visionbook-201709.firebaseio.com",
+    "project_id": "visionbook-201709",
+    "storage_bucket": "visionbook-201709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63369256541:android:b6505b82b45a7ad7",
+        "android_client_info": {
+          "package_name": "com.visionbook.sergi.visionbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63369256541-89cbnt94lekav6v1s8heag494svfo2jh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_WfcnaMQbhaqbvXyzD0SLP00o_cHl-Wk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

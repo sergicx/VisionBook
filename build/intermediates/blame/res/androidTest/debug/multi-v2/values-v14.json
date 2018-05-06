@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\86e8bc47f0115c3005e93268a117dd3d\\res\\values-v14\\values-v14.xml",
+                    "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\0521388f83bd68b5a902e8c6f66d037c\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "2,7,8,9,15",
                         "startColumns": "4,4,4,4,4",
