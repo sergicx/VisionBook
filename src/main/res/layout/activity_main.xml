@@ -14,8 +14,7 @@
             android:id="@+id/fragment"
             android:name="com.visionbook.sergi.visionbook.LlibresFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout="@layout/fragment_llibres" />
+            android:layout_height="match_parent" />
 
 
     </FrameLayout>

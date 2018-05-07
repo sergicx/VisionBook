@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun May 06 23:18:01 CEST 2018
+#Mon May 07 15:44:15 CEST 2018
 2.base=C\:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 5.set=DEX
 0.path=crashlytics-build.properties
