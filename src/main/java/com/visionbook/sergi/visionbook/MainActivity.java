@@ -160,8 +160,6 @@ public class MainActivity extends AppCompatActivity{
 
         switch(position) {
             default:
-                fragment = null;
-                break;
             case 0:
                 fragment = new LlibresFragment();
                 break;
@@ -169,9 +167,7 @@ public class MainActivity extends AppCompatActivity{
                 fragment = new CapturarFragment();
                 break;
         }
-        fragmentManager.beginTransaction()
-                .replace(R.id.content_frame, fragment)
-                .commit();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
 
         //Selecciono el item del menu, canvio el titol del toolbar i tanco el menu
         mDrawerList.setItemChecked(position, true);
@@ -197,11 +193,11 @@ public class MainActivity extends AppCompatActivity{
         }
     }
 
-    public void onRestart() {
-        super.onRestart();
+    public void onResume() {
+        super.onResume();
         //Torno a seleccionar la primera opcio del menu si l'usuari torna a aquesta activitat
         System.out.println("onrestart");
-       selectItem(0);
+        selectItem(0);
     }
 
 

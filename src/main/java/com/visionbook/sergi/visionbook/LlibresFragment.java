@@ -86,13 +86,6 @@ public class LlibresFragment extends Fragment{
         mRecyclerView.setLayoutManager(mLayoutManager);
         omplirLlistaLlibres();
 
-        FirebaseUser usuari = FirebaseAuth.getInstance().getCurrentUser();
-
-        System.out.println("fragment carregat!");
-
-        if (usuari != null) Toast.makeText(getActivity(), usuari.getDisplayName(), Toast.LENGTH_SHORT).show();
-
-
         return view;
     }
 

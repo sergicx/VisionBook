@@ -112,10 +112,10 @@ public class LlibreDetall extends AppCompatActivity{
             if (isPortadaGran){
                 ivPortada.setImageBitmap(imatge);
             }else{
-                if (!existeixLlibre(llibre.getId()))
+                if (!Helper.existeixLlibre(llibre.getId(), db))
                     afegirLlibreSql(imatge);
                 else if (capturat){
-                    eliminarLlibre(llibre.getId());
+                    Helper.eliminarLlibre(llibre.getId(), db);
                     afegirLlibreSql(imatge);
                 }
             }
@@ -154,17 +154,6 @@ public class LlibreDetall extends AppCompatActivity{
         db.insert("llibres", null, registreLlibre);
     }
 
-    private boolean existeixLlibre(String idLlibre){
-        Cursor cLlibre = db.rawQuery("SELECT * FROM llibres WHERE idllibre = " + "'" + idLlibre + "'", null);
-
-        if (cLlibre.moveToFirst()) return true;
-
-        return false;
-    }
-
-    private void eliminarLlibre(String idLlibre){
-        db.delete("llibres", "idllibre" + "= '" + idLlibre + "'", null);
-    }
 
 
 

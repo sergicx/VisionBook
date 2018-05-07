@@ -240,6 +240,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_action_navigation_more_vert.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_action_navigation_more_vert.png"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -592,6 +596,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_cardview.xml.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\menu\\menu_cardview.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
@@ -622,6 +630,10 @@
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_navigation_more_vert.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_navigation_more_vert.png"
     },
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -1070,6 +1082,10 @@
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_exit.xml.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_navigation_more_vert.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-hdpi\\ic_action_navigation_more_vert.png"
     },
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1740,6 +1756,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\bf68b349b58aeef0bfa8144c0b3c8c55\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_navigation_more_vert.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-mdpi\\ic_action_navigation_more_vert.png"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
@@ -1926,6 +1946,10 @@
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\0fbf4a3351bc76ded7cce62a398049bd\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_navigation_more_vert.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_navigation_more_vert.png"
     },
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",

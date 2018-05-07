@@ -1,6 +1,9 @@
 package com.visionbook.sergi.visionbook.helper;
 
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
 import java.util.ArrayList;
 
 public class Helper {
@@ -27,4 +30,18 @@ public class Helper {
 
         return  llistaAutors;
     }
+
+    public static boolean existeixLlibre(String idLlibre, SQLiteDatabase db){
+        Cursor cLlibre = db.rawQuery("SELECT * FROM llibres WHERE idllibre = " + "'" + idLlibre + "'", null);
+
+        if (cLlibre.moveToFirst()) return true;
+
+        return false;
+    }
+
+    public static void eliminarLlibre(String idLlibre, SQLiteDatabase db){
+        db.delete("llibres", "idllibre" + "= '" + idLlibre + "'", null);
+    }
+
+
 }

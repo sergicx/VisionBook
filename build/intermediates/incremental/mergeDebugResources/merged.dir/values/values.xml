@@ -889,6 +889,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">Vision Book</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="book_deleted">Book deleted</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="buscant">Searching...</string>
     <string name="buscant_el_llibre">Searching book...</string>
@@ -918,6 +919,7 @@
     <string name="data_publicacio">"Publish date: "</string>
     <string name="default_web_client_id" translatable="false">63369256541-89cbnt94lekav6v1s8heag494svfo2jh.apps.googleusercontent.com</string>
     <string name="editorial">"Publisher: "</string>
+    <string name="eliminar">Delete</string>
     <string name="facebook_application_id" translatable="false">CHANGE-ME</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
     <string name="firebase_database_url" translatable="false">https://visionbook-201709.firebaseio.com</string>

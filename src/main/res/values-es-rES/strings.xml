@@ -18,6 +18,8 @@
     <string name="carregant2">Cargando libro...</string>
     <string name="buscant">Buscando...</string>
     <string name="buscant_el_llibre">Buscando el libro...</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="book_deleted">Libro eliminado</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

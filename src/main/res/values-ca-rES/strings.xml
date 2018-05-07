@@ -18,8 +18,10 @@
     <string name="carregant2">Carregant llibre...</string>
     <string name="buscant">Buscant...</string>
     <string name="buscant_el_llibre">Buscant el llibre...</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="book_deleted">Llibre eliminat</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder tesxt -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_llibre_detall">LlibreDetall</string>
     <string name="action_settings">Settings</string>
