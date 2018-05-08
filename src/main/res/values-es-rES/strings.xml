@@ -7,6 +7,10 @@
         <item>Sobre VisionBook</item>
     </string-array>
 
+    <string name="llibres_capturats">Libros capturados</string>
+    <string name="capturar_llibre">Capturar libro</string>
+    <string name="sobre_app">Sobre VisionBook</string>
+
     <string name="buscant_llibre">Buscando libro, no mueva el dispositivo...</string>
     <string name="llibre_no_trobat">Libro no encontrado</string>
     <string name="sense_descripcio">Libro sin sinopsis</string>
@@ -20,6 +24,7 @@
     <string name="buscant_el_llibre">Buscando el libro...</string>
     <string name="eliminar">Eliminar</string>
     <string name="book_deleted">Libro eliminado</string>
+    <string name="title_activity_principal_menu">VisionBook</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

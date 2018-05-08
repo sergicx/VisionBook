@@ -6,7 +6,11 @@
         <item>Capture book</item>
         <item>About VisionBook</item>
     </string-array>
-    
+
+    <string name="llibres_capturats">Captured books</string>
+    <string name="capturar_llibre">Capture book</string>
+    <string name="sobre_app">About VisionBook</string>
+
     <string name="buscant_llibre">Searching book, don\'t move the device...</string>
     <string name="llibre_no_trobat">Book not found</string>
     <string name="sense_descripcio">Book without synopsis</string>
@@ -25,5 +29,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_llibre_detall">LlibreDetall</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_principal_menu">VisionBook</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>

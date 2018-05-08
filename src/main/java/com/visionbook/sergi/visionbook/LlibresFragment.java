@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -32,6 +33,7 @@ public class LlibresFragment extends Fragment{
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
     private AdaptadorLlibre adaptadorLlibre;
+    private FloatingActionButton btnFlotantCapturar;
 
     public LlibresFragment(){
 
@@ -77,6 +79,10 @@ public class LlibresFragment extends Fragment{
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_llibres, container, false);
+
+        btnFlotantCapturar = (FloatingActionButton) view.findViewById(R.id.btnFlotantCapturar);
+        btnFlotantCapturar.setOnClickListener((View v)-> obrirCapturarLlibre());
+
         sqLite = SQLite.getInstancia(getActivity());
         db = sqLite.getWritableDatabase();
 
@@ -87,6 +93,14 @@ public class LlibresFragment extends Fragment{
         omplirLlistaLlibres();
 
         return view;
+    }
+
+    private void obrirCapturarLlibre(){
+        Fragment capturarFragment = new CapturarFragment();
+        getActivity().getFragmentManager().popBackStack();
+        getFragmentManager().beginTransaction().replace(R.id.content_frame, capturarFragment).commit();
+        getActivity().setTitle(getResources().getString(R.string.capturar_llibre));
+        ((Principal)getActivity()).getNavigationView().setCheckedItem(R.id.nav_capturarllibre);
     }
 
 }
