@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_llistallibres"
+            android:title="@string/llibres_capturats" />
+        <item
+            android:id="@+id/nav_capturarllibre"
+            android:title="@string/capturar_llibre" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/sobre_app" />
+    </group>
+    <group android:id="@+id/grp2">
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>
