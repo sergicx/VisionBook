@@ -2,6 +2,7 @@ package com.visionbook.sergi.visionbook;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.visionbook.sergi.visionbook.helper.Helper;
 
 public class Principal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -53,6 +55,8 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
         navigationView.setCheckedItem(R.id.nav_llistallibres);
 
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -97,7 +101,17 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
         } else if (id == R.id.nav_about) {
             selectItem(2);
         }else if (id == R.id.nav_logout){
-            logout();
+            DialogInterface.OnClickListener tancarSesioListener = (dialog, which) -> {
+                switch (which){
+                    case DialogInterface.BUTTON_POSITIVE:
+                        logout();
+                        break;
+
+                    case DialogInterface.BUTTON_NEGATIVE:
+                        break;
+                }
+            };
+            Helper.confirmacioTancarSesio(this, tancarSesioListener, getResources().getString(R.string.confirmacio_logout));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

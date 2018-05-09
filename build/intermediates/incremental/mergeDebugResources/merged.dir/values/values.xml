@@ -927,10 +927,12 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="confirmacio_logout">Are you sure you want to log out?</string>
     <string name="data_publicacio">"Publish date: "</string>
     <string name="default_web_client_id" translatable="false">63369256541-89cbnt94lekav6v1s8heag494svfo2jh.apps.googleusercontent.com</string>
     <string name="editorial">"Publisher: "</string>
     <string name="eliminar">Delete</string>
+    <string name="error_internet">Connection problem</string>
     <string name="facebook_application_id" translatable="false">CHANGE-ME</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
     <string name="firebase_database_url" translatable="false">https://visionbook-201709.firebaseio.com</string>
@@ -1016,10 +1018,12 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA_WfcnaMQbhaqbvXyzD0SLP00o_cHl-Wk</string>
     <string name="google_storage_bucket" translatable="false">visionbook-201709.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_no_libros">"It seems you haven\'t captured any book yet! \n Tab the rounded button or open the left menu to capture a book."</string>
     <string name="llibre_no_trobat">Book not found</string>
     <string name="llibres_capturats">Captured books</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="no">No</string>
     <string name="num_pags">"Num. Pages: "</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
@@ -1029,9 +1033,11 @@
     <string name="project_id" translatable="false">visionbook-201709</string>
     <string name="search_menu_title">Search</string>
     <string name="sense_descripcio">Book without synopsis</string>
+    <string name="si">Yes</string>
     <string name="sinopsis">"Synopsis: "</string>
     <string name="sobre_app">About VisionBook</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="tancar_sesio">Logout</string>
     <string name="title_activity_llibre_detall">LlibreDetall</string>
     <string name="title_activity_principal_menu">VisionBook</string>
     <string name="twitter_consumer_key" translatable="false">CHANGE-ME</string>

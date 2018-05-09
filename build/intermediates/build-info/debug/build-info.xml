@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1525813339204"
+    timestamp="1525898210693"
     token="-6861340228766409818"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="2310" />
+        duration="1772" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="601" />
+        duration="550" />
     <task
         name="verifier"
-        duration="1125" />
+        duration="1032" />
 
     <artifact
         location="C:\Users\Sergi\Documents\VisionBook\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
@@ -62,7 +62,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1525813339204"
+        timestamp="1525898210693"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Sergi\Documents\VisionBook\app\build\intermediates\split-apk\debug\dep\dependencies.apk"

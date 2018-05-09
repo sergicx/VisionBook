@@ -14,6 +14,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,6 +35,7 @@ public class LlibresFragment extends Fragment{
     private RecyclerView.LayoutManager mLayoutManager;
     private AdaptadorLlibre adaptadorLlibre;
     private FloatingActionButton btnFlotantCapturar;
+    private LinearLayout layoutInfoLlibre;
 
     public LlibresFragment(){
 
@@ -70,6 +72,7 @@ public class LlibresFragment extends Fragment{
         if (llistaLlibres.size() > 0) {
             adaptadorLlibre = new AdaptadorLlibre(llistaLlibres, mRecyclerView);
             mRecyclerView.setAdapter(adaptadorLlibre);
+            layoutInfoLlibre.setVisibility(View.INVISIBLE);
         }
     }
 
@@ -82,6 +85,8 @@ public class LlibresFragment extends Fragment{
 
         btnFlotantCapturar = (FloatingActionButton) view.findViewById(R.id.btnFlotantCapturar);
         btnFlotantCapturar.setOnClickListener((View v)-> obrirCapturarLlibre());
+
+        layoutInfoLlibre = (LinearLayout) view.findViewById(R.id.layoutInfoLlibre);
 
         sqLite = SQLite.getInstancia(getActivity());
         db = sqLite.getWritableDatabase();

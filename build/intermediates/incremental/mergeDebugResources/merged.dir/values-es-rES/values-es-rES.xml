@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="itemsMenu">
+        <item>Libros capturados</item>
+        <item>Capturar libro</item>
+        <item>Sobre VisionBook</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Vision Book</string>
+    <string name="book_deleted">Libro eliminado</string>
+    <string name="buscant">Buscando...</string>
+    <string name="buscant_el_llibre">Buscando el libro...</string>
+    <string name="buscant_llibre">Buscando libro, no mueva el dispositivo...</string>
+    <string name="capturar_llibre">Capturar libro</string>
+    <string name="carregant1">Cargando...</string>
+    <string name="carregant2">Cargando libro...</string>
+    <string name="confirmacio_logout">Estas seguro que quieres cerrar la sesión?</string>
+    <string name="data_publicacio">"Data publicación: "</string>
+    <string name="editorial">Editorial: </string>
+    <string name="eliminar">Eliminar</string>
+    <string name="error_internet">Problema de conexión</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_no_libros">"Parece que aún no has capturado ningún libro! \n Toca el botón redondo o abre el menú de la izquierda para capturar uno."</string>
+    <string name="llibre_no_trobat">Libro no encontrado</string>
+    <string name="llibres_capturats">Libros capturados</string>
+    <string name="no">No</string>
+    <string name="num_pags">"Num. Paginas: "</string>
+    <string name="sense_descripcio">Libro sin sinopsis</string>
+    <string name="si">Si</string>
+    <string name="sinopsis">Sinopsis: </string>
+    <string name="sobre_app">Sobre VisionBook</string>
+    <string name="tancar_sesio">Cerrar sesión</string>
+    <string name="title_activity_llibre_detall">LlibreDetall</string>
+    <string name="title_activity_principal_menu">VisionBook</string>
+</resources>

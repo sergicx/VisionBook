@@ -1,8 +1,15 @@
 package com.visionbook.sergi.visionbook.helper;
 
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+
+import com.visionbook.sergi.visionbook.R;
 
 import java.util.ArrayList;
 
@@ -43,5 +50,16 @@ public class Helper {
         db.delete("llibres", "idllibre" + "= '" + idLlibre + "'", null);
     }
 
+    public static void confirmacioTancarSesio(Context context, DialogInterface.OnClickListener dialogClickListener, String text){
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setMessage(text).setPositiveButton(context.getResources().getString(R.string.si), dialogClickListener)
+                .setNegativeButton(context.getResources().getString(R.string.no), dialogClickListener).show();
+    }
 
+    public static boolean hiHaInternet(Context context) {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
 }

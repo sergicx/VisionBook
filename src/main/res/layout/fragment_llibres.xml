@@ -8,7 +8,22 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-        <android.support.v7.widget.RecyclerView
+    <LinearLayout
+        android:id="@+id/layoutInfoLlibre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/info_no_libros"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerLlibres"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -27,7 +42,8 @@
         android:layout_marginRight="30dp"
         android:layout_weight="1"
         android:clickable="true"
-        app:elevation="3dp"
+        app:elevation="5dp"
         app:fabSize="normal"
         app:srcCompat="@android:drawable/ic_menu_camera" />
+
 </FrameLayout>

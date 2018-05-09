@@ -30,5 +30,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_llibre_detall">LlibreDetall</string>
     <string name="action_settings">Settings</string>
+    <string name="confirmacio_logout">Estas seguro que quieres cerrar la sesión?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="error_internet">Problema de conexión</string>
+    <string name="info_no_libros">"Parece que aún no has capturado ningún libro! \n Toca el botón redondo o abre el menú de la izquierda para capturar uno."</string>
+    <string name="tancar_sesio">Cerrar sesión</string>
 
 </resources>

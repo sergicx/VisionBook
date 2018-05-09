@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="itemsMenu">
+        <item>Llibres capturats</item>
+        <item>Capturar llibre</item>
+        <item>Sobre VisionBook</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Vision Book</string>
+    <string name="book_deleted">Llibre eliminat</string>
+    <string name="buscant">Buscant...</string>
+    <string name="buscant_el_llibre">Buscant el llibre...</string>
+    <string name="buscant_llibre">Buscant llibre, no moguis el dispositiu...</string>
+    <string name="capturar_llibre">Capturar llibre</string>
+    <string name="carregant1">Carregant...</string>
+    <string name="carregant2">Carregant llibre...</string>
+    <string name="confirmacio_logout">Estás segur que vols tancar la sesió?</string>
+    <string name="data_publicacio">Data publicació: </string>
+    <string name="editorial">Editorial: </string>
+    <string name="eliminar">Eliminar</string>
+    <string name="error_internet">Problema de connexió</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_no_libros">"Sembla que encara no has capturat cap llibre! \n Toca el botó rodó o obre el menú de l\'esquerra per a capturar un."</string>
+    <string name="llibre_no_trobat">Llibre no trobat</string>
+    <string name="llibres_capturats">Llibres capturats</string>
+    <string name="no">No</string>
+    <string name="num_pags">Num. Pagines: </string>
+    <string name="sense_descripcio">Llibre sense sinopsi</string>
+    <string name="si">Si</string>
+    <string name="sinopsis">"Sinopsi: "</string>
+    <string name="sobre_app">Sobre VisionBook</string>
+    <string name="tancar_sesio">Tancar sessió</string>
+    <string name="title_activity_llibre_detall">LlibreDetall</string>
+    <string name="title_activity_principal_menu">VisionBook</string>
+</resources>

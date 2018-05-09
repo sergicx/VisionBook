@@ -1,6 +1,7 @@
 package com.visionbook.sergi.visionbook;
 
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,7 @@ import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.visionbook.sergi.visionbook.helper.Helper;
 
 public class PantallaInici extends AppCompatActivity {
 
@@ -49,13 +51,16 @@ public class PantallaInici extends AppCompatActivity {
     }
 
     public void iniciarSesio(View v) {
-        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
-            // Create and launch sign-in intent
-            startActivityForResult(
-                    AuthUI.getInstance()
-                            .createSignInIntentBuilder()
-                            .build(),
-                    RC_SIGN_IN);
+        if (Helper.hiHaInternet(this)) {
+            if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+                startActivityForResult(
+                        AuthUI.getInstance()
+                                .createSignInIntentBuilder()
+                                .build(),
+                        RC_SIGN_IN);
+            }
+        }else {
+            Snackbar.make(getWindow().getDecorView().getRootView(), getResources().getString(R.string.error_internet), Snackbar.LENGTH_SHORT).show();
         }
     }
 }

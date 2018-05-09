@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -82,10 +83,13 @@ public class AdaptadorLlibre extends RecyclerView.Adapter<AdaptadorLlibre.ViewHo
         holder.ivRowPortada.setImageBitmap(llistaLlibres.get(position).getbPortada());
 
         holder.itemView.setOnClickListener((View e) ->{
-            Intent iResultat = new Intent(holder.itemView.getContext(), LlibreDetall.class);
-            iResultat.putExtra("resultat", llistaLlibres.get(position));
-            iResultat.putExtra("capturat", false);
-            holder.itemView.getContext().startActivity(iResultat);
+            if (Helper.hiHaInternet(holder.itemView.getContext())) {
+                Intent iResultat = new Intent(holder.itemView.getContext(), LlibreDetall.class);
+                iResultat.putExtra("resultat", llistaLlibres.get(position));
+                iResultat.putExtra("capturat", false);
+                holder.itemView.getContext().startActivity(iResultat);
+            }else
+                Snackbar.make(((Principal) holder.itemView.getContext()).getWindow().getDecorView().getRootView(), holder.itemView.getResources().getString(R.string.error_internet), Snackbar.LENGTH_SHORT).show();
         });
 
         holder.btnRowMenu.setOnClickListener(view -> onPopupMenuClick(view, position));
