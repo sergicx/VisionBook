@@ -3,6 +3,7 @@ package com.visionbook.sergi.visionbook;
 
 import android.Manifest;
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -20,10 +21,13 @@ import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
 import com.visionbook.sergi.visionbook.entitats.Llibre;
+import com.visionbook.sergi.visionbook.helper.Helper;
 
 import java.io.IOException;
 import java.text.Normalizer;
 import java.util.concurrent.ExecutionException;
+
+import static android.content.Context.MODE_PRIVATE;
 
 
 public class CapturarFragment extends Fragment {
@@ -32,6 +36,7 @@ public class CapturarFragment extends Fragment {
     private SurfaceView mCameraView;
     private View view;
     private TextRecognizer textRecognizer;
+    SharedPreferences prefs = null;
 
 
     public CapturarFragment() {
@@ -165,6 +170,11 @@ public class CapturarFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_capturar, container, false);
+        prefs = view.getContext().getSharedPreferences("com.visionbook.sergi.visionbook", MODE_PRIVATE);
+        if (prefs.getBoolean("primercop", true)) {
+            Helper.caixaMisatge(view.getContext(), "Com capturar", view.getResources().getString(R.string.com_capturar));
+            prefs.edit().putBoolean("primercop", false).commit();
+        }
         startCameraSource();
 
         return view;

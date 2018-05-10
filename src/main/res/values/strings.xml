@@ -39,5 +39,7 @@
     <string name="error_internet">Connection problem</string>
     <string name="info_no_libros">"It seems you haven\'t captured any book yet! \n Tab the rounded button or open the left menu to capture a book."</string>
     <string name="tancar_sesio">Logout</string>
+    <string name="com_capturar">Point the camera at a book and when it looks focused and correctly, touch the screen.</string>
+    <string name="titol_com_capturar">How to capture a book?</string>
 
 </resources>

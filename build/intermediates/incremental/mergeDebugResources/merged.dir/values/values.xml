@@ -909,6 +909,7 @@
     <string name="carregant2">Loading book...</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">77252c51-646a-4395-affc-28655847aec9</string>
+    <string name="com_capturar">Point the camera at a book and when it looks focused and correctly, touch the screen.</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -1040,6 +1041,7 @@
     <string name="tancar_sesio">Logout</string>
     <string name="title_activity_llibre_detall">LlibreDetall</string>
     <string name="title_activity_principal_menu">VisionBook</string>
+    <string name="titol_com_capturar">How to capture a book?</string>
     <string name="twitter_consumer_key" translatable="false">CHANGE-ME</string>
     <string name="twitter_consumer_secret" translatable="false">CHANGE-ME</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

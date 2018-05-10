@@ -36,5 +36,7 @@
     <string name="error_internet">Problema de connexió</string>
     <string name="info_no_libros">"Sembla que encara no has capturat cap llibre! \n Toca el botó rodó o obre el menú de l\'esquerra per a capturar un."</string>
     <string name="tancar_sesio">Tancar sessió</string>
+    <string name="com_capturar">Apunta amb la camara a un llibre i quan es vegi enfocat i correctament, toca la pantalla.</string>
+    <string name="titol_com_capturar">Com capturar un llibre?</string>
 
 </resources>

@@ -62,4 +62,17 @@ public class Helper {
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
+
+    public static void caixaMisatge(Context context, String titol, String misatge) {
+        AlertDialog.Builder dlgAlert = new AlertDialog.Builder(context);
+        dlgAlert.setMessage(misatge);
+        dlgAlert.setTitle(titol);
+        dlgAlert.setPositiveButton("OK", null);
+        dlgAlert.setCancelable(true);
+        dlgAlert.create().show();
+        dlgAlert.setPositiveButton("OK",
+                (dialog, which) -> {
+
+                });
+    }
 }

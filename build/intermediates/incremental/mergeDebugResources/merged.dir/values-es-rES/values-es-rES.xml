@@ -14,6 +14,7 @@
     <string name="capturar_llibre">Capturar libro</string>
     <string name="carregant1">Cargando...</string>
     <string name="carregant2">Cargando libro...</string>
+    <string name="com_capturar">Apunta con la cámara a un libro y cuando se vea enfocado y correctamente, toca la pantalla.</string>
     <string name="confirmacio_logout">Estas seguro que quieres cerrar la sesión?</string>
     <string name="data_publicacio">"Data publicación: "</string>
     <string name="editorial">Editorial: </string>
@@ -32,4 +33,5 @@
     <string name="tancar_sesio">Cerrar sesión</string>
     <string name="title_activity_llibre_detall">LlibreDetall</string>
     <string name="title_activity_principal_menu">VisionBook</string>
+    <string name="titol_com_capturar">Cómo capturar un libro?</string>
 </resources>
