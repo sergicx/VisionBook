@@ -22,6 +22,7 @@ import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
 import com.visionbook.sergi.visionbook.entitats.Llibre;
 import com.visionbook.sergi.visionbook.helper.Helper;
+import com.visionbook.sergi.visionbook.peticionsapi.ObtenirDadesLlibre;
 
 import java.io.IOException;
 import java.text.Normalizer;
@@ -172,7 +173,7 @@ public class CapturarFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_capturar, container, false);
         prefs = view.getContext().getSharedPreferences("com.visionbook.sergi.visionbook", MODE_PRIVATE);
         if (prefs.getBoolean("primercop", true)) {
-            Helper.caixaMisatge(view.getContext(), "Com capturar", view.getResources().getString(R.string.com_capturar));
+            Helper.caixaMisatge(view.getContext(), getResources().getString(R.string.titol_com_capturar), view.getResources().getString(R.string.com_capturar));
             prefs.edit().putBoolean("primercop", false).commit();
         }
         startCameraSource();
