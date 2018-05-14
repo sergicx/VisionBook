@@ -8,6 +8,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">Vision Book</string>
     <string name="book_deleted">Llibre eliminat</string>
+    <string name="boto_comentaris">Opinions del llibre (%1$d)</string>
     <string name="buscant">Buscant...</string>
     <string name="buscant_el_llibre">Buscant el llibre...</string>
     <string name="buscant_llibre">Buscant llibre, no moguis el dispositiu...</string>
@@ -34,4 +35,5 @@
     <string name="title_activity_llibre_detall">LlibreDetall</string>
     <string name="title_activity_principal_menu">VisionBook</string>
     <string name="titol_com_capturar">Com capturar un llibre?</string>
+    <string name="titol_comentaris">Opinions de %1$s</string>
 </resources>

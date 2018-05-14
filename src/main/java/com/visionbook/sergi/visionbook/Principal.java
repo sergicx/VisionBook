@@ -19,7 +19,9 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.visionbook.sergi.visionbook.capturar_llibre.CapturarFragment;
 import com.visionbook.sergi.visionbook.helper.Helper;
+import com.visionbook.sergi.visionbook.llista_llibres.LlibresFragment;
 
 public class Principal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 

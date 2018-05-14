@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.visionbook.sergi.visionbook.LlibreDetall">
+    tools:context="com.visionbook.sergi.visionbook.mestre_llibre.LlibreDetall">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"

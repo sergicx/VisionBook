@@ -41,5 +41,9 @@
     <string name="tancar_sesio">Logout</string>
     <string name="com_capturar">Point the camera at a book and when it looks focused and correctly, touch the screen.</string>
     <string name="titol_com_capturar">How to capture a book?</string>
+    <string name="title_activity_llista_comentaris">LlistaComentaris</string>
+
+    <string name="boto_comentaris">Book reviews (%1$d)</string>
+    <string name="titol_comentaris">Reviews of %1$s</string>
 
 </resources>

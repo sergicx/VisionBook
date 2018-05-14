@@ -39,4 +39,8 @@
     <string name="com_capturar">Apunta amb la camara a un llibre i quan es vegi enfocat i correctament, toca la pantalla.</string>
     <string name="titol_com_capturar">Com capturar un llibre?</string>
 
+    <string name="boto_comentaris">Opinions del llibre (%1$d)</string>
+
+    <string name="titol_comentaris">Opinions de %1$s</string>
+
 </resources>

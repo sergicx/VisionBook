@@ -29,13 +29,14 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocr" />
 
         <activity
-            android:name="com.visionbook.sergi.visionbook.LlibreDetall"
+            android:name="com.visionbook.sergi.visionbook.mestre_llibre.LlibreDetall"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_llibre_detall"
             android:screenOrientation="portrait"
@@ -53,6 +54,10 @@
         <activity
             android:name="com.visionbook.sergi.visionbook.Principal"
             android:label="@string/title_activity_principal_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.visionbook.sergi.visionbook.comentaris.LlistaComentaris"
+            android:label="@string/title_activity_llista_comentaris"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data

@@ -900,6 +900,7 @@
     <string name="app_name">Vision Book</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="book_deleted">Book deleted</string>
+    <string name="boto_comentaris">Book reviews (%1$d)</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="buscant">Searching...</string>
     <string name="buscant_el_llibre">Searching book...</string>
@@ -1040,8 +1041,10 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="tancar_sesio">Logout</string>
     <string name="title_activity_llibre_detall">LlibreDetall</string>
+    <string name="title_activity_llista_comentaris">LlistaComentaris</string>
     <string name="title_activity_principal_menu">VisionBook</string>
     <string name="titol_com_capturar">How to capture a book?</string>
+    <string name="titol_comentaris">Reviews of %1$s</string>
     <string name="twitter_consumer_key" translatable="false">CHANGE-ME</string>
     <string name="twitter_consumer_secret" translatable="false">CHANGE-ME</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

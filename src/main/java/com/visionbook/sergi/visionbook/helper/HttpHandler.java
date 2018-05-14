@@ -7,11 +7,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
-
-import javax.net.ssl.HttpsURLConnection;
 
 public class HttpHandler {
 
@@ -24,7 +23,7 @@ public class HttpHandler {
         String response = null;
         try {
             URL url = new URL(reqUrl);
-            HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             // read the response
             InputStream in = new BufferedInputStream(conn.getInputStream());

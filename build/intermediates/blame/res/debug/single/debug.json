@@ -576,6 +576,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_llista_comentaris.xml.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\layout\\activity_llista_comentaris.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_low_poly.png.flat",
         "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-xxhdpi\\low_poly.png"
     },
@@ -1970,6 +1974,10 @@
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\bf68b349b58aeef0bfa8144c0b3c8c55\\res\\drawable-xxxhdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_comentari.xml.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\layout\\row_comentari.xml"
     },
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_tick_mark_material.xml.flat",

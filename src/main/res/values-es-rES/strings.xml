@@ -39,4 +39,8 @@
     <string name="com_capturar">Apunta con la cámara a un libro y cuando se vea enfocado y correctamente, toca la pantalla.</string>
     <string name="titol_com_capturar">Cómo capturar un libro?</string>
 
+    <string name="boto_comentaris">Opiniones del libro (%1$d)</string>
+
+    <string name="titol_comentaris">Opiniones de %1$s</string>
+
 </resources>

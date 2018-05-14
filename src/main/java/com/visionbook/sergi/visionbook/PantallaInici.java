@@ -5,14 +5,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.visionbook.sergi.visionbook.helper.Helper;
+import com.visionbook.sergi.visionbook.peticions_api.CreaUsuari;
 
 public class PantallaInici extends AppCompatActivity {
 
@@ -41,6 +40,7 @@ public class PantallaInici extends AppCompatActivity {
 
             if (resultCode == RESULT_OK) {
                 usuari = FirebaseAuth.getInstance().getCurrentUser();
+                new CreaUsuari().execute(usuari.getUid(), usuari.getDisplayName(), usuari.getEmail());
                 Intent principal = new Intent(this, Principal.class);
                 startActivity(principal);
                 finish();
