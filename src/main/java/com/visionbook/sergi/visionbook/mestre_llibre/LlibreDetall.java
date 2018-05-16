@@ -167,6 +167,11 @@ public class LlibreDetall extends AppCompatActivity{
         startActivity(i);
     }
 
+    public void onRestart() {
+        super.onRestart();
+        new NumeroComentaris(this).execute(llibre.getId());
+    }
+
 
 
 

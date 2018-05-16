@@ -22,10 +22,12 @@
     <string name="eliminar">Eliminar</string>
     <string name="error_internet">Problema de connexió</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_opinion">Escriu la teva opinió...</string>
     <string name="info_no_libros">"Sembla que encara no has capturat cap llibre! \n Toca el botó rodó o obre el menú de l\'esquerra per a capturar un."</string>
     <string name="llibre_no_trobat">Llibre no trobat</string>
     <string name="llibres_capturats">Llibres capturats</string>
     <string name="no">No</string>
+    <string name="no_comentaris">Sigues el primer en opinar sobre aquest llibre!</string>
     <string name="num_pags">Num. Pagines: </string>
     <string name="sense_descripcio">Llibre sense sinopsi</string>
     <string name="si">Si</string>

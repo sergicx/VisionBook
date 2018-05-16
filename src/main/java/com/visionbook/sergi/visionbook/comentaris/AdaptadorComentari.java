@@ -26,6 +26,7 @@ public class AdaptadorComentari extends RecyclerView.Adapter<AdaptadorComentari.
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView tvRowNomUsuari;
         public TextView tvRowComentari;
+        public TextView tvTimeStampCom;
 
 
         public View layout;
@@ -35,6 +36,7 @@ public class AdaptadorComentari extends RecyclerView.Adapter<AdaptadorComentari.
             layout = v;
             tvRowNomUsuari = (TextView) v.findViewById(R.id.tvRowNomUsuari);
             tvRowComentari = (TextView) v.findViewById(R.id.tvRowComentari);
+            tvTimeStampCom = (TextView) v.findViewById(R.id.tvTimeStampCom);
         }
     }
 
@@ -54,6 +56,7 @@ public class AdaptadorComentari extends RecyclerView.Adapter<AdaptadorComentari.
     public void onBindViewHolder(@NonNull AdaptadorComentari.ViewHolder holder, int position) {
         holder.tvRowNomUsuari.setText(llistaComentaris.get(position).getNomUsuari());
         holder.tvRowComentari.setText(llistaComentaris.get(position).getComentari());
+        holder.tvTimeStampCom.setText(llistaComentaris.get(position).getTimeStamp());
 
     }
 

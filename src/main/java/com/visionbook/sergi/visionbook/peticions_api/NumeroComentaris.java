@@ -1,6 +1,7 @@
 package com.visionbook.sergi.visionbook.peticions_api;
 
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Button;
@@ -14,9 +15,16 @@ import org.json.JSONObject;
 
 public class NumeroComentaris extends AsyncTask<String, Void, Integer>{
     private Context context;
+    private ProgressDialog dialog;
 
     public NumeroComentaris(Context context) {
         this.context = context;
+    }
+
+    @Override
+    protected void onPreExecute(){
+            dialog = ProgressDialog.show(context, context.getResources().getString(R.string.carregant1), context.getResources().getString(R.string.carregant2), true);
+            dialog.show();
     }
 
     @Override
@@ -45,5 +53,6 @@ public class NumeroComentaris extends AsyncTask<String, Void, Integer>{
 
         Button btnComentaris = (Button) ((LlibreDetall) context).findViewById(R.id.btnObrirComentaris);
         btnComentaris.setText(context.getResources().getString(R.string.boto_comentaris, result));
+        dialog.dismiss();
     }
 }

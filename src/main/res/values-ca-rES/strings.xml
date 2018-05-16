@@ -42,5 +42,7 @@
     <string name="boto_comentaris">Opinions del llibre (%1$d)</string>
 
     <string name="titol_comentaris">Opinions de %1$s</string>
+    <string name="hint_opinion">Escriu la teva opinió...</string>
+    <string name="no_comentaris">Sigues el primer en opinar sobre aquest llibre!</string>
 
 </resources>

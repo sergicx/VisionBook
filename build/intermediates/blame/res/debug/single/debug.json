@@ -1640,6 +1640,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\bf68b349b58aeef0bfa8144c0b3c8c55\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boto_rodo.xml.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable\\boto_rodo.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },

@@ -45,5 +45,7 @@
 
     <string name="boto_comentaris">Book reviews (%1$d)</string>
     <string name="titol_comentaris">Reviews of %1$s</string>
+    <string name="hint_opinion">Write your opinion...</string>
+    <string name="no_comentaris">Be the first to review this book!</string>
 
 </resources>

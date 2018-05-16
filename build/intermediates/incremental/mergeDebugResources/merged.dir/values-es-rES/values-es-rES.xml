@@ -22,10 +22,12 @@
     <string name="eliminar">Eliminar</string>
     <string name="error_internet">Problema de conexión</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_opinion">Escribe tu opinión...</string>
     <string name="info_no_libros">"Parece que aún no has capturado ningún libro! \n Toca el botón redondo o abre el menú de la izquierda para capturar uno."</string>
     <string name="llibre_no_trobat">Libro no encontrado</string>
     <string name="llibres_capturats">Libros capturados</string>
     <string name="no">No</string>
+    <string name="no_comentaris">Sé el primero en opinar sobre este libro!</string>
     <string name="num_pags">"Num. Paginas: "</string>
     <string name="sense_descripcio">Libro sin sinopsis</string>
     <string name="si">Si</string>

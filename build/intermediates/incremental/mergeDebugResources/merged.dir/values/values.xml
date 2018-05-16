@@ -1020,12 +1020,14 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA_WfcnaMQbhaqbvXyzD0SLP00o_cHl-Wk</string>
     <string name="google_storage_bucket" translatable="false">visionbook-201709.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_opinion">Write your opinion...</string>
     <string name="info_no_libros">"It seems you haven\'t captured any book yet! \n Tab the rounded button or open the left menu to capture a book."</string>
     <string name="llibre_no_trobat">Book not found</string>
     <string name="llibres_capturats">Captured books</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="no">No</string>
+    <string name="no_comentaris">Be the first to review this book!</string>
     <string name="num_pags">"Num. Pages: "</string>
     <string name="password_toggle_content_description">Toggle password visibility</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>

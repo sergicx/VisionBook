@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.visionbook.sergi.visionbook.comentaris.LlistaComentaris"
-    tools:showIn="@layout/activity_llista_comentaris">
+    tools:context="com.visionbook.sergi.visionbook.comentaris.LlistaComentaris">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -23,11 +22,58 @@
 
     </android.support.design.widget.AppBarLayout>
 
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerComentatis"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical" />
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerComentaris"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toTopOf="@+id/etComentari"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etComentari"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint_opinion"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnAfegirComentari"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnAfegirComentari"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_send"
+            android:maxLength="500"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerComentaris" />
+
+        <TextView
+            android:id="@+id/tvNoComentaris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="90dp"
+            android:text="@string/no_comentaris"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </android.support.constraint.ConstraintLayout>
+
 
 </LinearLayout>
