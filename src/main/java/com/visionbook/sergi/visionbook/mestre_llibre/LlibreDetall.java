@@ -26,7 +26,6 @@ import com.visionbook.sergi.visionbook.peticions_api.NumeroComentaris;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.net.URL;
-import java.util.concurrent.ExecutionException;
 
 public class LlibreDetall extends AppCompatActivity{
 
@@ -37,6 +36,7 @@ public class LlibreDetall extends AppCompatActivity{
     private CollapsingToolbarLayout collapsingToolbarLayout;
     private SQLiteDatabase db;
     private boolean capturat;
+    private Button btnComentaris;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +55,8 @@ public class LlibreDetall extends AppCompatActivity{
         tvEditorial = (TextView) findViewById(R.id.tvEditorial);
         tvNumPag = (TextView) findViewById(R.id.tvNumPag);
         tvData = (TextView) findViewById(R.id.tvData);
+        btnComentaris = (Button) findViewById(R.id.btnObrirComentaris);
+        btnComentaris.requestFocus();
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
 
@@ -79,6 +81,12 @@ public class LlibreDetall extends AppCompatActivity{
         new DescarregarPortada(false).execute(urlPortadaPetita);
 
         new NumeroComentaris(this).execute(llibre.getId());
+
+        btnComentaris.setOnClickListener((View v)->{
+            Intent i = new Intent(this, LlistaComentaris.class);
+            i.putExtra("llibre", llibre);
+            startActivity(i);
+        });
     }
 
     private class DescarregarPortada extends AsyncTask<String, Void, Bitmap> {

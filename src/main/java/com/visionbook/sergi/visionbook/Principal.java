@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -134,9 +135,14 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
                 navigationView.setCheckedItem(R.id.nav_llistallibres);
                 break;
             case 1:
-                fragment = new CapturarFragment();
-                setTitle(getResources().getString(R.string.capturar_llibre));
-                navigationView.setCheckedItem(R.id.nav_capturarllibre);
+                if (Helper.hiHaInternet(this)) {
+                    fragment = new CapturarFragment();
+                    setTitle(getResources().getString(R.string.capturar_llibre));
+                    navigationView.setCheckedItem(R.id.nav_capturarllibre);
+                }else {
+                    Snackbar.make(getWindow().getDecorView(), getResources().getString(R.string.error_internet), Snackbar.LENGTH_SHORT).show();
+                    fragment = new LlibresFragment();
+                }
                 break;
         }
         fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();

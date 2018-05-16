@@ -37,11 +37,15 @@
         <activity
             android:name=".Principal"
             android:label="@string/title_activity_principal_menu"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".comentaris.LlistaComentaris"
             android:label="@string/title_activity_llista_comentaris"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

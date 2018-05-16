@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -99,11 +100,15 @@ public class LlibresFragment extends Fragment{
     }
 
     private void obrirCapturarLlibre(){
-        Fragment capturarFragment = new CapturarFragment();
-        getActivity().getFragmentManager().popBackStack();
-        getFragmentManager().beginTransaction().replace(R.id.content_frame, capturarFragment).commit();
-        getActivity().setTitle(getResources().getString(R.string.capturar_llibre));
-        ((Principal)getActivity()).getNavigationView().setCheckedItem(R.id.nav_capturarllibre);
+        if (Helper.hiHaInternet(getActivity())) {
+            Fragment capturarFragment = new CapturarFragment();
+            getActivity().getFragmentManager().popBackStack();
+            getFragmentManager().beginTransaction().replace(R.id.content_frame, capturarFragment).commit();
+            getActivity().setTitle(getResources().getString(R.string.capturar_llibre));
+            ((Principal) getActivity()).getNavigationView().setCheckedItem(R.id.nav_capturarllibre);
+        }else {
+            Snackbar.make(getView(), getResources().getString(R.string.error_internet), Snackbar.LENGTH_SHORT).show();
+        }
     }
 
 }
