@@ -29,6 +29,8 @@
     <string name="no">No</string>
     <string name="no_comentaris">Sigues el primer en opinar sobre aquest llibre!</string>
     <string name="num_pags">Num. Pagines: </string>
+    <string name="publicant_comentari_text">Publicant opinió...</string>
+    <string name="publicant_comentari_titol">Publicant...</string>
     <string name="sense_descripcio">Llibre sense sinopsi</string>
     <string name="si">Si</string>
     <string name="sinopsis">"Sinopsi: "</string>

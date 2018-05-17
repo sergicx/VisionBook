@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 16 21:54:07 CEST 2018
+#Thu May 17 16:00:24 CEST 2018
 1.base=C\:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

@@ -44,5 +44,7 @@
     <string name="titol_comentaris">Opiniones de %1$s</string>
     <string name="hint_opinion">Escribe tu opinión...</string>
     <string name="no_comentaris">Sé el primero en opinar sobre este libro!</string>
+    <string name="publicant_comentari_titol">Publicando...</string>
+    <string name="publicant_comentari_text">Publicando opinión...</string>
 
 </resources>

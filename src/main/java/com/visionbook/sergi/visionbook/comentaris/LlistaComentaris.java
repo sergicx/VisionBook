@@ -1,5 +1,6 @@
 package com.visionbook.sergi.visionbook.comentaris;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -40,6 +41,7 @@ public class LlistaComentaris extends AppCompatActivity {
     private Button btnAfegirComentari;
     private EditText etComentari;
     private TextView tvNoComentaris;
+    private ProgressDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +80,7 @@ public class LlistaComentaris extends AppCompatActivity {
         protected void onPreExecute(){
             super.onPreExecute();
             llistaComentaris = new ArrayList<>();
+
         }
 
         @Override
@@ -121,9 +124,18 @@ public class LlistaComentaris extends AppCompatActivity {
     private class AfegirComentari extends AsyncTask<String, Void, Void>{
 
         @Override
+        protected void onPreExecute(){
+            super.onPreExecute();
+
+            dialog = ProgressDialog.show(LlistaComentaris.this, getResources().getString(R.string.publicant_comentari_titol), getResources().getString(R.string.publicant_comentari_text), true);
+            dialog.show();
+        }
+
+        @Override
         protected Void doInBackground(String... strings) {
             HttpHandler sh = new HttpHandler();
-            String url = "http://visionbook.ml/creaComentari.php?id_usuari="+usuari.getUid()+"&id_llibre="+llibre.getId()+"&comentari="+strings[0];
+            String comentariNet = strings[0].replace("\n", "+").replace(" ", "+");
+            String url = "http://visionbook.ml/creaComentari.php?id_usuari="+usuari.getUid()+"&id_llibre="+llibre.getId()+"&comentari="+comentariNet;
             sh.makeServiceCall(url);
             return null;
         }
@@ -133,6 +145,7 @@ public class LlistaComentaris extends AppCompatActivity {
             super.onPostExecute(result);
             new ObtenirComentaris().execute(llibre.getId());
             adaptadorComentari.notifyDataSetChanged();
+            dialog.dismiss();
             etComentari.setText("");
             etComentari.clearFocus();
             etComentari.setFocusable(false);

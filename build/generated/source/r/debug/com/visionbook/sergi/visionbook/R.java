@@ -4485,20 +4485,22 @@ public final class R {
     public static final int path_password_eye_mask_visible=0x7f0f009e;
     public static final int path_password_strike_through=0x7f0f009f;
     public static final int project_id=0x7f0f00a0;
-    public static final int search_menu_title=0x7f0f00a1;
-    public static final int sense_descripcio=0x7f0f00a2;
-    public static final int si=0x7f0f00a3;
-    public static final int sinopsis=0x7f0f00a4;
-    public static final int sobre_app=0x7f0f00a5;
-    public static final int status_bar_notification_info_overflow=0x7f0f00a6;
-    public static final int tancar_sesio=0x7f0f00a7;
-    public static final int title_activity_llibre_detall=0x7f0f00a8;
-    public static final int title_activity_llista_comentaris=0x7f0f00a9;
-    public static final int title_activity_principal_menu=0x7f0f00aa;
-    public static final int titol_com_capturar=0x7f0f00ab;
-    public static final int titol_comentaris=0x7f0f00ac;
-    public static final int twitter_consumer_key=0x7f0f00ad;
-    public static final int twitter_consumer_secret=0x7f0f00ae;
+    public static final int publicant_comentari_text=0x7f0f00a1;
+    public static final int publicant_comentari_titol=0x7f0f00a2;
+    public static final int search_menu_title=0x7f0f00a3;
+    public static final int sense_descripcio=0x7f0f00a4;
+    public static final int si=0x7f0f00a5;
+    public static final int sinopsis=0x7f0f00a6;
+    public static final int sobre_app=0x7f0f00a7;
+    public static final int status_bar_notification_info_overflow=0x7f0f00a8;
+    public static final int tancar_sesio=0x7f0f00a9;
+    public static final int title_activity_llibre_detall=0x7f0f00aa;
+    public static final int title_activity_llista_comentaris=0x7f0f00ab;
+    public static final int title_activity_principal_menu=0x7f0f00ac;
+    public static final int titol_com_capturar=0x7f0f00ad;
+    public static final int titol_comentaris=0x7f0f00ae;
+    public static final int twitter_consumer_key=0x7f0f00af;
+    public static final int twitter_consumer_secret=0x7f0f00b0;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f100000;

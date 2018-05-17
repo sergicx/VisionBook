@@ -29,6 +29,8 @@
     <string name="no">No</string>
     <string name="no_comentaris">Sé el primero en opinar sobre este libro!</string>
     <string name="num_pags">"Num. Paginas: "</string>
+    <string name="publicant_comentari_text">Publicando opinión...</string>
+    <string name="publicant_comentari_titol">Publicando...</string>
     <string name="sense_descripcio">Libro sin sinopsis</string>
     <string name="si">Si</string>
     <string name="sinopsis">Sinopsis: </string>
