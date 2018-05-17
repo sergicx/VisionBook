@@ -116,9 +116,15 @@
 
         <Button
             android:id="@+id/btnObrirComentaris"
+            style="@style/FirebaseUI.Button.AccountChooser.GoogleButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Opinions del llibre (0)" />
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true"
+            android:text="@string/boto_comentaris"
+            android:textAlignment="center"
+            android:textSize="18sp" />
 
 
     </LinearLayout>

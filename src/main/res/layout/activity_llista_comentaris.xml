@@ -44,7 +44,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/hint_opinion"
-            android:inputType="textPersonName"
+            android:maxEms="500"
+            android:singleLine="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnAfegirComentari"
             app:layout_constraintStart_toStartOf="parent" />
@@ -70,8 +71,8 @@
             android:paddingTop="90dp"
             android:text="@string/no_comentaris"
             android:textAlignment="center"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textAllCaps="false"
+            android:textSize="18sp" />
 
     </android.support.constraint.ConstraintLayout>
 

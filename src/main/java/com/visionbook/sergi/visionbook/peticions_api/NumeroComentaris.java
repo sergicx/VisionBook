@@ -38,7 +38,6 @@ public class NumeroComentaris extends AsyncTask<String, Void, Integer>{
             try {
                 JSONObject jsonObj = new JSONObject(jsonStr);
                 numComentaris = jsonObj.getInt("trobats");
-                System.out.println("id: " + strings[0]);
             } catch (JSONException e) {
                 e.printStackTrace();
             }

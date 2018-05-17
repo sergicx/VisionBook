@@ -56,7 +56,6 @@ public class LlibreDetall extends AppCompatActivity{
         tvNumPag = (TextView) findViewById(R.id.tvNumPag);
         tvData = (TextView) findViewById(R.id.tvData);
         btnComentaris = (Button) findViewById(R.id.btnObrirComentaris);
-        btnComentaris.requestFocus();
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
 
@@ -167,12 +166,6 @@ public class LlibreDetall extends AppCompatActivity{
         registreLlibre.put("data", llibre.getDataPublicacio());
         registreLlibre.put("urlportada", llibre.getUrlImatge());
         db.insert("llibres", null, registreLlibre);
-    }
-
-    public void obrirComentarisAction(View v){
-        Intent i = new Intent(this, LlistaComentaris.class);
-        i.putExtra("llibre", llibre);
-        startActivity(i);
     }
 
     public void onRestart() {
