@@ -5,6 +5,10 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
@@ -17,11 +21,24 @@ public class PantallaInici extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 123;
     private FirebaseUser usuari;
+    private Animation amuntCapAvall, avallCapAmunt;
+    private Button btnLogin;
+    private TextView tvTitol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inici);
+
+        btnLogin = (Button) findViewById(R.id.btnLogin);
+        tvTitol = (TextView) findViewById(R.id.tvTitol);
+
+        amuntCapAvall = AnimationUtils.loadAnimation(this, R.anim.amuntcapavall);
+        tvTitol.setAnimation(amuntCapAvall);
+
+        avallCapAmunt = AnimationUtils.loadAnimation(this, R.anim.avallcapamunt);
+        btnLogin.setAnimation(avallCapAmunt);
+
         usuari = FirebaseAuth.getInstance().getCurrentUser();
 
         if (usuari != null){

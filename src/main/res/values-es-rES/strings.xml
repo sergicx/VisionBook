@@ -46,5 +46,6 @@
     <string name="no_comentaris">Sé el primero en opinar sobre este libro!</string>
     <string name="publicant_comentari_titol">Publicando...</string>
     <string name="publicant_comentari_text">Publicando opinión...</string>
+    <string name="login_boto">Iniciar sesión o registrarse</string>
 
 </resources>

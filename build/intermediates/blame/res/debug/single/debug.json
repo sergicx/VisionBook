@@ -84,6 +84,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_background_inici.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-hdpi\\background_inici.png"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_normal.xml.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\0fbf4a3351bc76ded7cce62a398049bd\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
@@ -286,6 +290,10 @@
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\0fbf4a3351bc76ded7cce62a398049bd\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_background_inici.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-xxhdpi\\background_inici.png"
     },
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_camera.xml.flat",
@@ -940,6 +948,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_background_inici.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-xxxhdpi\\background_inici.png"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
@@ -986,6 +998,10 @@
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\anim_avallcapamunt.xml.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\anim\\avallcapamunt.xml"
     },
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
@@ -1716,6 +1732,10 @@
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\anim_amuntcapavall.xml.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\anim\\amuntcapavall.xml"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\46cab186b6064a030e9024abca71fc6a\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
@@ -2084,6 +2104,10 @@
         "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_background_inici.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-xhdpi\\background_inici.png"
+    },
+    {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_common_google_signin_btn_text_light_normal.xml.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-auth-15.0.0.aar\\dbbab372f4c5db010dac1c48dfd4f9d1\\res\\drawable-watch-v20\\common_google_signin_btn_text_light_normal.xml"
     },
@@ -2218,6 +2242,10 @@
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Sergi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\c406be4111db2f5d376de33a48af8b70\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_background_inici.png.flat",
+        "source": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\src\\main\\res\\drawable-mdpi\\background_inici.png"
     },
     {
         "merged": "C:\\Users\\Sergi\\Documents\\VisionBook\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",

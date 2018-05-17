@@ -49,5 +49,6 @@
     <string name="no_comentaris">Be the first to review this book!</string>
     <string name="publicant_comentari_titol">Publishing...</string>
     <string name="publicant_comentari_text">Publishing review...</string>
+    <string name="login_boto">Login or sign up</string>
 
 </resources>

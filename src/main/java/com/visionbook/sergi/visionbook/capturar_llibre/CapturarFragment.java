@@ -162,7 +162,7 @@ public class CapturarFragment extends Fragment {
 
     public void onResume() {
         super.onResume();
-        startCameraSource();
+        //startCameraSource();
     }
 
 

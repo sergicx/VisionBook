@@ -149,7 +149,7 @@ MERGED from [com.google.android.gms:play-services-measurement-base:15.0.2] C:\Us
 	android:allowBackup
 		ADDED from C:\Users\Sergi\Documents\VisionBook\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\Sergi\Documents\VisionBook\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\Sergi\Documents\VisionBook\app\src\main\AndroidManifest.xml:16:9-52
 meta-data#com.google.android.gms.vision.DEPENDENCIES
 ADDED from C:\Users\Sergi\Documents\VisionBook\app\src\main\AndroidManifest.xml:17:9-19:35
 	android:value

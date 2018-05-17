@@ -4,14 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_inici"
     tools:context="com.visionbook.sergi.visionbook.PantallaInici">
+
+    <TextView
+        android:id="@+id/tvTitol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="Vision Book"
+        android:textAppearance="@android:style/TextAppearance.WindowTitle"
+        android:textSize="56sp"
+        android:typeface="serif" />
 
     <Button
         android:id="@+id/btnLogin"
+        style="@style/FirebaseUI.Button.AccountChooser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginBottom="139dp"
         android:onClick="iniciarSesio"
-        android:text="Login" />
+        android:text="@string/login_boto"
+        android:textSize="18sp" />
+
 </RelativeLayout>
