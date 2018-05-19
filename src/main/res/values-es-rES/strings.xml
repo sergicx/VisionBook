@@ -47,5 +47,6 @@
     <string name="publicant_comentari_titol">Publicando...</string>
     <string name="publicant_comentari_text">Publicando opinión...</string>
     <string name="login_boto">Iniciar sesión o registrarse</string>
+    <string name="text_about">App creada por Sergi Cañuelo. \n Contacta conmigo: sergicx96@gmail.com</string>
 
 </resources>

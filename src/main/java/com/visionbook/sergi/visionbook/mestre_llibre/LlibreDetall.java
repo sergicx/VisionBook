@@ -86,6 +86,8 @@ public class LlibreDetall extends AppCompatActivity{
             i.putExtra("llibre", llibre);
             startActivity(i);
         });
+
+        getWindow().getDecorView().findViewById(R.id.toolbarDetall).setFocusable(false);
     }
 
     private class DescarregarPortada extends AsyncTask<String, Void, Bitmap> {

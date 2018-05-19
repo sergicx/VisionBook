@@ -3,6 +3,7 @@ package com.visionbook.sergi.visionbook.capturar_llibre;
 
 import android.Manifest;
 import android.app.Fragment;
+import android.app.ProgressDialog;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -26,6 +27,8 @@ import com.visionbook.sergi.visionbook.helper.Helper;
 import com.visionbook.sergi.visionbook.peticions_api.ObtenirDadesLlibre;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.text.Normalizer;
 import java.util.concurrent.ExecutionException;
 
@@ -122,8 +125,12 @@ public class CapturarFragment extends Fragment {
                                     stringBuilder.append(item.getValue());
                                 }
 
-                                //Evito els salts de linia i concateno els espais amb el caracter + per a que sigui mes familiar amb la URL
-                                String capturaFinal = stringBuilder.toString().replace("\n", "+").replace(" ", "+");
+                                String capturaFinal = null;
+                                try {
+                                    capturaFinal = URLEncoder.encode(stringBuilder.toString(), "utf-8");
+                                } catch (UnsupportedEncodingException e) {
+                                    e.printStackTrace();
+                                }
                                 capturaFinal = treureAccents(capturaFinal);
 
                                 try {

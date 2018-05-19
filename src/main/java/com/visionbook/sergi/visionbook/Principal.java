@@ -2,6 +2,7 @@ package com.visionbook.sergi.visionbook;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -125,7 +128,7 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
     private void selectItem(int position) {
         //Executo el fragment depenent de l'opcio seleccionada per l'usuari
         Fragment fragment;
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 
         switch(position) {
             default:
@@ -144,8 +147,18 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
                     fragment = new LlibresFragment();
                 }
                 break;
+            case 2:
+                fragment = new SobreLaAppFragment();
+                setTitle(getResources().getString(R.string.sobre_app));
+                navigationView.setCheckedItem(R.id.nav_about);
+                break;
         }
-        fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+
+        ((FrameLayout) findViewById(R.id.content_frame)).removeAllViews();
+
+        fragmentTransaction.replace(R.id.content_frame, fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 
     private void requestCameraPermission() {

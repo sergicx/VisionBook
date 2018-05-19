@@ -27,6 +27,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -134,8 +136,14 @@ public class LlistaComentaris extends AppCompatActivity {
         @Override
         protected Void doInBackground(String... strings) {
             HttpHandler sh = new HttpHandler();
-            String comentariNet = strings[0].replace("\n", "+").replace(" ", "+");
+            String comentariNet = null;
+            try {
+                comentariNet = URLEncoder.encode(strings[0].replaceAll("'", "''"), "utf-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
             String url = "http://visionbook.ml/creaComentari.php?id_usuari="+usuari.getUid()+"&id_llibre="+llibre.getId()+"&comentari="+comentariNet;
+            System.out.println(url);
             sh.makeServiceCall(url);
             return null;
         }

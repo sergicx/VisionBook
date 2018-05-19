@@ -35,8 +35,6 @@ public class ObtenirDadesLlibre extends AsyncTask<String, Void, Llibre> {
     protected void onPreExecute() {
         super.onPreExecute();
         System.out.println("Començant la cerca...");
-        dialog = ProgressDialog.show(context, context.getResources().getString(R.string.buscant), context.getResources().getString(R.string.buscant_el_llibre), true);
-        dialog.show();
     }
 
     @Override
@@ -111,8 +109,6 @@ public class ObtenirDadesLlibre extends AsyncTask<String, Void, Llibre> {
             iResultat.putExtra("capturat", true);
             context.startActivity(iResultat);
         }
-
-        dialog.dismiss();
     }
 
 }
