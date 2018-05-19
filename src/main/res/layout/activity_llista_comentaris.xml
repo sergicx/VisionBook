@@ -44,6 +44,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/hint_opinion"
+            android:inputType="textCapSentences"
             android:maxEms="500"
             android:singleLine="false"
             app:layout_constraintBottom_toBottomOf="parent"
