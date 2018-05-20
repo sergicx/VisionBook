@@ -50,6 +50,6 @@
     <string name="publicant_comentari_titol">Publishing...</string>
     <string name="publicant_comentari_text">Publishing review...</string>
     <string name="login_boto">Login or sign up</string>
-    <string name="text_about">App created by Sergi Cañuelo. \n Contact with me here: sergicx96@gmail.com</string>
+    <string name="text_about">App created by Sergi Cañuelo. \n\n You can contact with me here: sergicx96@gmail.com</string>
 
 </resources>
