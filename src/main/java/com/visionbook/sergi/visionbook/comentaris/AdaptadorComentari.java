@@ -43,11 +43,9 @@ public class AdaptadorComentari extends RecyclerView.Adapter<AdaptadorComentari.
     @NonNull
     @Override
     public AdaptadorComentari.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        // create a new view
         LayoutInflater inflater = LayoutInflater.from(
                 parent.getContext());
         View v = inflater.inflate(R.layout.row_comentari, parent, false);
-        // set the view's size, margins, paddings and layout parameters
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }
