@@ -30,18 +30,6 @@ public class AdaptadorLlibre extends RecyclerView.Adapter<AdaptadorLlibre.ViewHo
     public AdaptadorLlibre(List<Llibre> llistaLlibres, RecyclerView recyclerView) {
         this.llistaLlibres = llistaLlibres;
         this.mRecyclerView = recyclerView;
-
-//        final LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-//        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-//            @Override
-//            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-//                super.onScrolled(recyclerView, dx, dy);
-//                if (linearLayoutManager.findLastCompletelyVisibleItemPosition() == getItemCount()-1){
-//                    System.out.println("CARREGAR MES ITEMS!");
-//                }
-//            }
-//        });
-
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
