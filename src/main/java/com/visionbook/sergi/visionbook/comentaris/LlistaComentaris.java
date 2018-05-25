@@ -143,7 +143,6 @@ public class LlistaComentaris extends AppCompatActivity {
                 e.printStackTrace();
             }
             String url = "http://visionbook.ml/creaComentari.php?id_usuari="+usuari.getUid()+"&id_llibre="+llibre.getId()+"&comentari="+comentariNet;
-            System.out.println(url);
             sh.makeServiceCall(url);
             return null;
         }

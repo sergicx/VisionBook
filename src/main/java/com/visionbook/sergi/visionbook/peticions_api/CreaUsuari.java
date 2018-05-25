@@ -16,7 +16,7 @@ public class CreaUsuari extends AsyncTask<String, Void, Void>{
         HttpHandler sh = new HttpHandler();
 
         String url = "http://visionbook.ml/creaUsuari.php?id=" + strings[0] + "&nom=" + strings[1] + "&email=" + strings[2];
-        //Faig una petició GET utilitzant la classe HttpHandler
+        //Faig una petició http utilitzant la classe HttpHandler
         sh.makeServiceCall(url);
         return null;
     }

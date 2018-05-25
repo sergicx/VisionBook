@@ -27,7 +27,7 @@ public class ObtenirDadesLlibre extends AsyncTask<String, Void, Llibre> {
     public ObtenirDadesLlibre(Context context){
         this.context = context;
         sqLite = SQLite.getInstancia(context);
-        //i obtinc la escritura de la base de dades per a poder modificar en tot el fragment
+        //obtinc la escritura de la base de dades per a poder modificar en tot el fragment
         db = sqLite.getWritableDatabase();
     }
 

@@ -64,6 +64,7 @@ public class LlibreDetall extends AppCompatActivity{
 
         collapsingToolbarLayout.setTitle(llibre.getTitol());
 
+        //Obtinc els autors separats per comes utilitzant el metode helper de getLlistaAutors
         tvAutor.setText(Helper.getLlistaAutors(llibre.getAutors()));
         tvResum.setText(llibre.getDescripcio());
         tvEditorial.setText(llibre.getEditorial());
@@ -100,6 +101,8 @@ public class LlibreDetall extends AppCompatActivity{
 
         private Bitmap descarregarBitmap(String sUrl) {
             Bitmap bitmap = null;
+
+            //S'obté el bitmap a partir de una url que porti a una imatge
             try {
                 InputStream inputStream = new URL(sUrl).openStream();
                 bitmap = BitmapFactory.decodeStream(inputStream);

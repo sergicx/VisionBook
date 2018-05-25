@@ -43,10 +43,18 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        /*
+           Codi generat per Android Studio per a gestionar el menu
+           =======================================================
+         */
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+        /*
+           =======================================================
+         */
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -66,6 +74,7 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
 
     @Override
     public void onBackPressed() {
+        //Metode implementat per a que es tanqui el menú quan l'usuari li doni cap endarrere al movil
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -76,8 +85,6 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.principal_menu, menu);
         return true;
     }
 
@@ -97,7 +104,7 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+        //aqui es gestiona les accions de cada item del menú
         int id = item.getItemId();
 
         if (id == R.id.nav_llistallibres) {
@@ -154,6 +161,7 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
                 break;
         }
 
+        //Es substitueix el fragment anterior per el nou que l'usuari hagi seleccionat
         ((FrameLayout) findViewById(R.id.content_frame)).removeAllViews();
 
         fragmentTransaction.replace(R.id.content_frame, fragment);

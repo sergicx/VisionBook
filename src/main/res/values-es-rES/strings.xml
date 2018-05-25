@@ -18,7 +18,7 @@
     <string name="sense_descripcio">Libro sin sinopsis</string>
     <string name="editorial">Editorial: </string>
     <string name="num_pags">"Num. Paginas: "</string>
-    <string name="data_publicacio">"Data publicación: "</string>
+    <string name="data_publicacio">"Fecha publicación: "</string>
     <string name="sinopsis">Sinopsis: </string>
     <string name="carregant1">Cargando...</string>
     <string name="carregant2">Cargando libro...</string>

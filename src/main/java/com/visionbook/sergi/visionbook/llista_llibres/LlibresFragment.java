@@ -43,11 +43,8 @@ public class LlibresFragment extends Fragment{
     private void omplirLlistaLlibres(){
         List<Llibre> llistaLlibres = new ArrayList<>();
 
+        //Es fa una select a la base de dades local de SQLite ordenat amb els mes recents primer
         Cursor cLlibre = db.rawQuery("SELECT * FROM llibres ORDER BY id DESC", null);
-
-        /*db.execSQL("CREATE TABLE llibres (id integer PRIMARY KEY AUTOINCREMENT NOT NULL , idllibre text, titol text, autor text, descripcio text, " +
-                "editorial text, numpag text, data text, urlportada text, portada BLOB)");
-                */
 
         if (cLlibre.moveToFirst()) {
             do {
@@ -64,11 +61,14 @@ public class LlibresFragment extends Fragment{
                 Bitmap portadaRaw = BitmapFactory.decodeByteArray(blobPortada, 0 ,blobPortada.length);
                 llibre.setbPortada(portadaRaw);
 
+                //Es fa una llista d'objectes Llibre per a pasar-li al adaptador del RecyclerView
                 llistaLlibres.add(llibre);
             } while (cLlibre.moveToNext());
         }
 
         if (llistaLlibres.size() > 0) {
+            //S'instancia l'adaptador pasant-li la llista per a que automaticament generi la llista
+            //de vistes
             adaptadorLlibre = new AdaptadorLlibre(llistaLlibres, mRecyclerView);
             mRecyclerView.setAdapter(adaptadorLlibre);
             layoutInfoLlibre.setVisibility(View.INVISIBLE);
@@ -90,6 +90,7 @@ public class LlibresFragment extends Fragment{
         sqLite = SQLite.getInstancia(getActivity());
         db = sqLite.getWritableDatabase();
 
+        //Es prepara el RecyclerView per a poder començar a complir la llista de llibres
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerLlibres);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getActivity());
