@@ -3,7 +3,7 @@
 Aplicació que permet veure informació d'un llibre o opinar, simplement apuntant amb la camera a la portada d'un llibre.
 
 ## Instálatela
-Descarregat la app [aqui](http://visionbook.ml/visionbook.apk)
+[![img](https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.visionbook.sergi.visionbook)
 
 ## Autors
 
