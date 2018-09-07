@@ -42,6 +42,7 @@ public class ObtenirDadesLlibre extends AsyncTask<String, Void, Llibre> {
         System.out.println("BUSCANT PER: "+ strings[0]);
         HttpHandler sh = new HttpHandler();
         //Concateno la url de la consulta a la API amb el text que hagi capturat
+        //https://www.googleapis.com/books/v1/volumes/idllibre
         String url = "https://www.googleapis.com/books/v1/volumes?q="+strings[0];
         //Faig una petició GET utilitzant la classe HttpHandler
         String jsonStr = sh.makeServiceCall(url);
